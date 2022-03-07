@@ -1,0 +1,52 @@
+.navbar{
+    border-bottom: 1px solid var(--dark-electric-blue);
+    font-size: var(--font-size-xsm);
+    color: var(--light-color);
+}
+
+.nav__list {
+	padding-inline-end: 30px;
+}
+.nav__icon{
+    font-size: var(--font-size-sm);
+    padding-right: 1rem;
+}
+.nav__link{
+    color: var(--light-color);
+}
+.nav__link:hover{ 
+   text-decoration: underline solid 2px var(--primary-mid-color) ;
+}
+.nav__right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+.navbarLink {
+	padding-inline-start: 0px;
+}
+
+.nav-button {
+	background-color: blueviolet;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+	height: 40px;
+	font-size: 1rem;
+}
+.moon-icon {
+	display: none;
+}
+
+.light-theme .sun-icon {
+	display: none;
+}
+.light-theme .moon-icon {
+	display: block;
+}
