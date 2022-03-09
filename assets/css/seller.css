@@ -1,0 +1,37 @@
+.seller__wrapper img {
+	max-width: 10rem;
+	border-radius: 3rem;
+}
+.seller__wrapper span {
+}
+.seller__wrapper i {
+	position: relative;
+	z-index: 999;
+	top: -2rem;
+	left: 4rem;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background-color: var(--secondary-color);
+}
+.b1{
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid var(--light-color);
+	border-radius: 50%;
+}
+.b2{
+	background-color: var(--light-color);
+	color: var(--secondary-color);
+}
+
+.seller__avatar {
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+    align-items: center;
+    font-family: 'fabrand','Popins' ,sans-serif;
+    font-size: var(--font-size-xsm);
+	color: var(--primary-light-color);
+}

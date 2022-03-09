@@ -1,15 +1,31 @@
+#hero {
+	height: 90vh;
+}
 .hero__wrapper {
+	position: relative;
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-  
+}
+.hero__left {
+	display: inline-block;
+	
+}
+.hero__left h1 {
+	position: relative;
+	color: var(--light-color);
+	font-size: 6rem;
 }
 .hero__left h2 {
-    position: relative;
+	position: relative;
 	color: var(--light-color);
-	font-size: var(--font-size-lg);
 	font-size: 5rem;
+}
+.hero__left p {
+	margin-top: -2rem;
+	padding:4rem 0;
 }
 .hero__left span {
 	font-family: 'ntfs';
@@ -27,49 +43,69 @@
 	transform: rotate(45deg);
 	display: inline-block;
 }
-
-.hero__circle--fill{
-    display: inline-block;
-	border-radius: 50%;
-	background: var(--primary-gradient-color);
+.middle {
+	left: 70rem;
 }
 
-.hero__circle--outline{
-   position: absolute;
-	border-radius: 50%;
-    border: 2px solid var(--third-light-color);
-	
+.hero__right img {
+	position: relative;
+	z-index: 9;
 }
-.size-1{
-    width: 1rem;
+
+.hero__right--blob {
+	position: absolute;
+	top: 10px;
+	z-index: 2;
+}
+
+.hero__circle--fill1 {
+	position: relative;
+	border-radius: 50%;
+	background: var(--light-bg-gradient-color);
+}
+
+.hero__circle--outline {
+	position: absolute;
+	border-radius: 50%;
+	border: 2px solid var(#e250e5);
+}
+.size-1 {
+	width: 1rem;
 	height: 1rem;
 }
-.size-2{
-    width: 2rem;
+.size-2 {
+	width: 2rem;
 	height: 2rem;
 }
-.size-3{
-    width: 3rem;
+.size-3 {
+	width: 3rem;
 	height: 3rem;
 }
 
-.size-4{
-    width: 4rem;
+.size-4 {
+	width: 4rem;
 	height: 4rem;
 }
-.hero__right{
+
+.strokeme {
+	font-size: 5rem;
+	color: transparent;
+	text-shadow: 1px 1px 0 rgb(173, 4, 173), 1px -1px 0 rgb(58, 38, 243), -1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.hero__sell {
+	
+	width: 50rem;
+}
+
+.hero__monster {
 
 }
-.hero__right--cloud{
-
-    position: absolute;
-width: 467.79px;
-height: 404.59px;
-left: 1337.37px;
-top: 399.29px;
-
-background: rgba(149, 80, 229, 0.08);
-border: 4px solid rgba(81, 66, 251, 0.5);
-box-shadow: 4px 4px 32px rgba(149, 80, 229, 0.15);
-transform: rotate(142.57deg);
+.self {
+	color: #14141f;
+	background: linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6);
+	background-size: 100% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 3px transparent;
 }

@@ -1,22 +1,28 @@
 .navbar{
-    border-bottom: 1px solid var(--dark-electric-blue);
-    font-size: var(--font-size-xsm);
+	padding-top:1rem ;
+	padding-bottom:1rem ;
+	position: relative;
+    border-bottom: 1px solid var(--dark-color);
+    font-size: var(--font-size-sm);
+	font-weight: --font-weight-bold;
     color: var(--light-color);
+	z-index: 999;
+	justify-content: space-around;
 }
 
-.nav__list {
-	padding-inline-end: 30px;
+.nav__link {
+	margin-right: -.7rem;
 }
 .nav__icon{
     font-size: var(--font-size-sm);
     padding-right: 1rem;
 }
-.nav__link{
+/* .nav__link{
     color: var(--light-color);
 }
 .nav__link:hover{ 
    text-decoration: underline solid 2px var(--primary-mid-color) ;
-}
+} */
 .nav__right{
     display: flex;
     flex-direction: row;
@@ -24,7 +30,9 @@
     align-items: center;
 }
 
-
+.nav__wallet{
+margin: 0;
+}
 
 
 .navbarLink {
@@ -38,7 +46,7 @@
 	border-radius: 5px;
 	width: 150px;
 	height: 40px;
-	font-size: 1rem;
+	font-size1: 1rem;
 }
 .moon-icon {
 	display: none;

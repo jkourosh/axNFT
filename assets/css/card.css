@@ -1,11 +1,89 @@
-.card__wrapper{
-  
+.card__header span1 {
+	/* display: block;
+	color: var(--primary-light-color);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-md); */
 }
 .card {
-    background-color: var(--third-dark-color);
-    padding: 1.5rem 1.5rem 12rem 1.5rem;
-    border-radius: 2rem;
+	position: relative;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: var(--dark-color-);
+	padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+	border-radius: 1.5rem;
 }
-.card img{
-    border-radius: 2rem;
+.card__like {
+	position: absolute;
+	top: 0%;
+	left: 73%;
+	font-size: var(--font-size-sm);
+	color: var(--light-color);
+	background-color: var(--dark-color---);
+	border-radius: 0.8rem;
+	padding: 0.2rem 0.5rem;
+	margin-top: 2rem;
+}
+.card:hover {
+	cursor: pointer;
+	transform: rotateX(1.2);
+}
+.card img {
+	max-width: 25rem;
+	height: auto;
+	border-radius: 1rem;
+}
+.card__title {
+	display: inline-block;
+
+	padding: 2rem 0rem;
+	font-size: var(--font-size-xsm);
+	font-weight: var(--font-weight-bold);
+	color: var(--light-color);
+}
+.card__box {
+	position: absolute;
+	top: 23rem;
+	left: 30%;
+	display: flex;
+	align-items: center;
+	padding: 0.3rem 0.5rem;
+	font-size: var(--font-size-xsm);
+	color: var(--light-color);
+	background-color: var(--dark-color---);
+	border-radius: 0.8rem;
+}
+.card__box img {
+	width: 2.5rem;
+	padding: 0 0.5rem;
+}
+.card__bsc {
+	color: var(--light-color);
+	padding: 0.3rem 1rem;
+	background-color: var(--secondary-color);
+	border-radius: 100px/100px;
+	font-size: var(--font-size-xsm);
+}
+.card__column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.card__desc {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.card__desc img {
+	width: 5rem;
+	border-radius: 1rem;
+}
+.card__creator,
+.card__bid {
+	font-size: var(--font-size-xsm);
+	color: var(--dark-color);
+}
+.card__name,
+.card__fee {
+	font-size: var(--font-size-sm);
+	color: var(--light-color);
 }

@@ -1,0 +1,29 @@
+.today__btnlist{
+
+justify-content: space-between;
+padding: 2rem 0;
+}
+.today__btn{
+   border: 2px solid var(--dark-color);
+   padding: .5rem 1rem;
+   font-size: var(--font-size-xxsm);
+}
+
+.todaybid__btn{
+    border1: 2px solid var(--dark-color);
+    padding: 1rem 1.5rem;
+    font-size: var(--font-size-xxsm);
+}
+
+.today__btn i{
+   padding: 0rem 0rem;
+   color: aliceblue;
+  
+}
+
+
+
+.today__footer{
+    padding: 1rem 0 0 0;
+    font-size: var(--font-size-xxsm);
+}
