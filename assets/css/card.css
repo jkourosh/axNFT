@@ -10,7 +10,39 @@
 	background-color: var(--dark-color-);
 	padding: 1.2rem 1.2rem 1.2rem 1.2rem;
 	border-radius: 1.5rem;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
 }
+.card:hover {
+	transform: scale(1.11);
+	-webkit-transform: scale(1.11);
+	
+}
+.card:hover .card__btn{
+	visibility: visible;
+}
+.card__btn{
+	visibility: hidden;
+	position: absolute;
+	top: 11rem;
+	left:8rem;
+	border-radius: 100px/100px;
+	margin: 1rem;
+    border:none;
+	color: var(--dark-color--);
+	background-color: var(--light-color);
+    padding: 1rem 1.5rem;
+    font-size: var(--font-size-xsm);
+	font-weight: var(--font-weight-bold);
+	
+}
+.bid_show{
+	display: block;
+}
+.card__btn i{
+   color: var(--secondary-color);
+}
+
 .card__like {
 	position: absolute;
 	top: 0%;

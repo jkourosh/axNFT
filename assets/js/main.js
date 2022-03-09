@@ -34,6 +34,13 @@ themeToggleBtn.addEventListener('click', () => {
 	}
 });
 
+// Card Place Bid
+// const Card = selectElement('#card');
+// const cardBid = selectElement('#card_bid');
+
+// Card.addEventListener('hover', () => cardBid.classList.add('bid_show'));
+
+
 
 
 const formOpenBtn = selectElement('#search-icon');
