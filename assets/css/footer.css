@@ -1,5 +1,5 @@
 #footer {
-	padding-top: 15rem;
+	padding-top: 2rem;
 	position: relative;
 
 }
@@ -27,28 +27,13 @@
 	color: var(--light-color);
 }
 .footer__address {
-    padding-top:5rem ;
+    padding-top:7rem ;
 	width: 20%;
 }
-.footer__address i {
-	color: var(--light-color);
-	padding1: 1rem;
-	margin: 2rem 0.5rem;
-	border: 0.1rem solid var(--light-color);
-	border-radius: 50%;
-	cursor: pointer;
-}
 
-.footer__address i:hover {
-	color: var(--light-color);
-	background-color: var(--light-color);
-	transition: all 0.3s linear;
-	transform: rotateY(360deg);
-	-webkit-transform: rotateY(360deg);
-	-ms-transform: rotateY(360deg);
-	-o-transform: rotateY(360deg);
+.footer__address img{
+width: 100%;
 }
-
 .footer__address h2 {
 	font-size: 6rem;
 	color: var(--light-color);
@@ -94,6 +79,7 @@ font-style: italic;
 	width: 30rem;
 	padding: 1rem 0;
 	position: relative;
+	color: var(--dark-color);
 }
 .footer__news input {
 	/* margin: 1px;*/
@@ -101,21 +87,47 @@ font-style: italic;
 	width: 100%;
 	outline: none;
 	height: 4.5rem;
-	border: 0.1rem solid var(--light-color);
-	border-radius: 0.4rem;
+	border: .1rem solid var(--dark-color);
+	border-radius: 2rem;
 	font-size: 1.5rem;
+	color: #eee;
 }
 
+.footer__news input::placeholder {
+color: var(--light-color--)
+}
 .footer__news button {
+
 	position: absolute;
 	border-radius: 5px;
 	right: .2rem;
 	z-index: 2;
 	border: none;
 	top: 1rem;
-	height: 4.5rem;
+	height: 1rem;
 	transform: translateX(2px);
 }
+
+.footer__news i {
+	color: var(--light-color);
+	margin: 2rem .5rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.footer__news i:hover {
+	color1: var(--secondary-color);
+	transition: all 0.3s linear;
+	font-style:oblique;
+	text-decoration: underline solid 2px var(--secondary-color);
+	text-underline-offset: 0.3rem;
+	animation: shake-vertical 1s ease 0s 1 normal none;
+}
+
+.footer__news--icon{
+  text-align: center;
+}
+
 #copyright{
 	width: fit-content;
   margin: auto;
