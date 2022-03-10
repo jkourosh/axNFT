@@ -72,25 +72,13 @@ font-face {
 	--dark-color--: #1f1f2c;
 	--dark-color---: #14141f;
 
-	--primary-color: #a977c6ff;
-	--primary-color-: #a448cd;
-	--primary-color--: #8419a5;
 
-	--secondary-color: #5142fc;
+	
 
 	--sefia-color: #d3bb9cff;
 	--sefia-color-: #9d8062ff;
 	--sepia-color--: #7b4e1dff;
-	--cyber-grape: #433765ff;
-	--dark-purple: #1e142bff;
-	--russian-violet: #221339ff;
-	--dark-purple: #1e142bff;
-	--xiketic-3: #12131dff;
-	--blue-deep1-color: #12131dff;
-	--blue-deep4-color: #0f0f26ff;
-	--blue-dark4-color: #10101aff;
-	--xiketic-3: #150f20ff;
-
+	
 	--hover-light-color: var(--secondary-color);
 	--hover-dark-color: var(--secondary-color);
 
@@ -196,7 +184,8 @@ i {
 	font-size: var(--font-size-md);
 }
 body.light-theme {
-	--dark-bg-gradient-color--: linear-gradient(216.56deg, #eeecec 0%,#fff 99.32%);
+	
+	--dark-bg-gradient-color--: linear-gradient(216.56deg, #c7c3c3 0%,#fff 99.32%);
 	--dark-color1: #fff;
 	--dark-color-: #fff;
 	--dark-color--: #afb6cd;
@@ -330,35 +319,6 @@ d-grid {
 	text-align: center;
 }
 
-
-
-
-
-.custom-shape-divider-bottom {
-    position: relative;
-    bottom1: 0;
-    left1: 0;
-    width1: 100%;
-    overflow1: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom svg {
-    position1: relative;
-    display1: block;
-    width1: calc(165% + 1.3px);
-    height1: 345px;
-    transform: rotateY(180deg);
-}
-
-
-
-
-.custom-shape-divider-bottom .shape-fill {
-    fill: #ffffff;
-	color: transparent;
-}
 .s1 {
 
     color: #14141f;
