@@ -282,7 +282,7 @@ d-grid {
 	color: var(--light-color);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font-size-lg);
-	padding: 1rem 0;
+	padding: 3rem 0;
 }
 .title {
 	padding: 1rem 0rem;
