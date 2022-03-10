@@ -31,7 +31,7 @@
 }
 
 .footer__address img {
-	width: 100%;
+	width: 20%;display: inline-block;
 }
 .footer__address h2 {
 	font-size: 6rem;
@@ -42,7 +42,8 @@
 	color: var(--light-color);
 }
 .footer__address span b {
-	font-size: 60%;
+	
+	font-size: var(--font-size-xl);
 	color: var(--light-color);
 	display: table-caption;
 }

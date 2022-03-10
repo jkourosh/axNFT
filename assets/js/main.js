@@ -34,19 +34,13 @@ themeToggleBtn.addEventListener('click', () => {
 	}
 });
 
-// Card Place Bid
-// const Card = selectElement('#card');
-// const cardBid = selectElement('#card_bid');
-
-// Card.addEventListener('hover', () => cardBid.classList.add('bid_show'));
-
-
 
 
 const formOpenBtn = selectElement('#search-icon');
 const formCloseBtn = selectElement('#form-close-btn');
 const searchformcontainer = selectElement('#search-form-container');
-formOpenBtn.addEventListener('click', () => searchformcontainer.classList.add('activated'));
+//formOpenBtn.addEventListener('click', () => searchformcontainer.classList.add('activated'));
+formOpenBtn.addEventListener('click', () => searchformcontainer.classList.toggle('activated'));
 formCloseBtn.addEventListener('click', () => searchformcontainer.classList.remove('activated'));
 
 // -- Close the search form popup on ESC keypress
