@@ -8,8 +8,16 @@
 	animation-fill-mode: none;
 	/* animation: ani-rotate 3s linear 0s 1 infinite; */
 }
-.float {
-	animation-name: ani-float;
+.vfloat {
+	animation-name: ver-float;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+
+	/* animation: ani-float 3s ease-in-out 0s 1 infinite; */
+}
+.hfloat {
+	animation-name: hor-float;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
@@ -62,7 +70,7 @@
 	}
 }
 
-@keyframes ani-float {
+@keyframes ver-float {
 	0% {
 		transform: translate(0, 0px);
 	}
@@ -73,7 +81,17 @@
 		transform: translate(0, -0px);
 	}
 }
-
+@keyframes hor-float {
+	0% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(15px, 0px);
+	}
+	100% {
+		transform: translate(-0, 0px);
+	}
+}
 @-webkit-keyframes bounce-in {
 	0% {
 		opacity: 0;

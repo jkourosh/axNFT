@@ -54,20 +54,55 @@
 
 .hero__right--blob {
 	position: absolute;
-	top: 10px;
+	margin-top: -15rem;
 	z-index: 2;
+	left: 35%;
+	width: 80%;
 }
-
-.hero__circle--fill1 {
+.hero__right--spaceman {
+	width: 85%;
+	margin-top: -8rem;
+}
+.hero__circle--fill {
 	position: relative;
 	border-radius: 50%;
 	background: var(--light-bg-gradient-color);
 }
-
+.p1{
+	top: 10rem;
+	left: 50%;
+}
+.p2{
+	top: 0rem;
+	margin-top: -5rem;
+	left: 50%;
+}
+.p3{
+	top:30rem;
+	left: -5rem;
+}
+.p4{
+	top: 10rem;
+	left: 10%;
+}
+.p5{
+	top: 5rem;
+  left: 85%;
+}
+.p6{
+	top: 40rem;
+	left: 80%;
+}
+.p7{
+	top: 5rem;
+	left: 85%;
+}
 .hero__circle--outline {
 	position: absolute;
 	border-radius: 50%;
-	border: 2px solid var(#e250e5);
+	border: 2px solid var(--primary-color--);
+	
+	background1: var(--light-bg-gradient-color);
 }
 .size-1 {
 	width: 1rem;
