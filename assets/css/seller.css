@@ -14,7 +14,7 @@
 	border-radius: 50%;
 	background-color: var(--secondary-color);
 }
-.b1{
+.b1 {
 	cursor: pointer;
 	width: 1rem;
 	height: 1rem;
@@ -22,25 +22,24 @@
 	border-radius: 50%;
 	padding: 0;
 }
-.b2{
+.b2 {
 	background-color: var(--light-color);
 	color: var(--secondary-color);
 }
 
 .seller__avatar {
-cursor: pointer;
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-    align-items: center;
-    font-family: 'fabrand','Popins' ,sans-serif;
-    font-size: var(--font-size-xsm);
+	align-items: center;
+	font-family: 'Popins', sans-serif;
+	font-size: var(--font-size-xsm);
 	color: var(--primary-light-color);
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
-.seller__avatar:hover{
-	border-radius: 50%;
+.seller__avatar:hover {
 	transform: scale(1.11);
 	-webkit-transform: scale(1.11);
 }

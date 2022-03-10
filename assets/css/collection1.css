@@ -1,0 +1,82 @@
+
+.coll__card{
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    gap: 0px;
+    height: 100%;
+    font-size: var(--font-size-xxsm);
+    background-color: var(--dark-color-);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.coll__card1 i{
+    background-color: var(--dark-color--);
+    padding1: .2rem .8rem;
+    border-radius: 50px/50px;
+}
+
+.coll__head1{
+    align-items1: flex-start;
+}
+.coll__title{
+    
+    background-color: #57E8BD; 
+   grid-row-start: 1;
+   grid-column-start: 2;
+
+   grid-row-end: 2;
+   grid-column-end: 5;
+
+}
+
+.coll__avatar{
+
+    background-color: #76DF77; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+
+}
+.coll__avatar img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.coll__avatar i{
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+    font-size: var(--font-size-sm);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    padding:5rem;
+}
+.coll__like{
+    background-color1: #86650b; 
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: 2;
+    grid-column-end: 6;
+    flex-grow: 0;
+	align-self: auto;
+	color: var(--dark-color);
+	background-color: var(--dark-color--);
+	padding: .1rem;
+    border-radius: .1rem;
+ }
+ .collcreate {
+	background-color: #a0078b;
+	grid-row-start: 3;
+	grid-column-start: 2;
+	grid-row-end: 4;
+	grid-column-end: 5;
+}
+
+
+
+
+
+ 

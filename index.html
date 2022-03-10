@@ -17,8 +17,9 @@
 		<link rel="stylesheet" href="./assets/css/card.css" />
 		<link rel="stylesheet" href="./assets/css/seller.css" />
 		<link rel="stylesheet" href="./assets/css/today.css" />
+		<link rel="stylesheet" href="./assets/css/collection.css" />
 		<link rel="stylesheet" href="./assets/css/footer.css" />
-		<title>Ax NFT</title>
+		<title>Axies NFT</title>
 	</head>
 	<body>
 		<!-- Header -->
@@ -61,24 +62,22 @@
 				</div>
 			</nav>
 		</header>
-<!-- Search -->
-<div class="search-form-container container" id="search-form-container">
-	<div class="form-container-inner">
-		<form action="" class="form">
-			<input type="text" class="form-input" placeholder="what are u looking for?" />
-			<button class="btn form-btn" type="submit">
-				<i class="ri-search-line"></i>
+		<!-- Search -->
+		<div class="search-form-container container" id="search-form-container">
+			<div class="form-container-inner">
+				<form action="" class="form">
+					<input type="text" class="form-input" placeholder="what are u looking for?" />
+					<button class="btn form-btn" type="submit">
+						<i class="ri-search-line"></i>
+					</button>
+				</form>
+				<span class="form-note">or press ESC to close</span>
+			</div>
+
+			<button class="btn form-close-btn place-items-center" id="form-close-btn">
+				<i class="ri-close-line"></i>
 			</button>
-		</form>
-		<span class="form-note">or press ESC to close</span>
-	</div>
-
-	<button class="btn form-close-btn place-items-center" id="form-close-btn">
-		<i class="ri-close-line"></i>
-	</button>
-</div>
-
-
+		</div>
 
 		<!-- Main -->
 		<section id="hero" class="hero__wrapper container">
@@ -105,9 +104,8 @@
 					<i class="ri-book-3-line ri-lg"></i>
 					Create
 				</button>
-			
+
 				<div class="hero__circle--fill hfloat size-2 p2"></div>
-			
 			</div>
 
 			<div class="hero__right">
@@ -121,11 +119,11 @@
 				<div class="hero__circle--fill hfloat size-4 p3"></div>
 				<div class="hero__circle--fill hfloat size-4 p7"></div>
 
-				<img src="./assets/img/02_hero/imgslider2.png" class="hero__right--spaceman vfloat" alt="" />
-				<!-- 
-				
-				<div class="hero__circle--fill vfloat size-4 p3"></div> -->
-
+				<img
+					src="./assets/img/02_hero/imgslider2.png"
+					class="hero__right--spaceman vfloat"
+					alt=""
+				/>
 			</div>
 		</section>
 
@@ -141,7 +139,7 @@
 						<img src="./assets/img/01_header/logo.png" alt="" />
 						<h3>01:16:25:45</h3>
 					</div>
-					<button  class="card__btn">
+					<button class="card__btn">
 						<i class="ri-shopping-bag-2-fill ri-lg"></i>
 						Place Bid
 					</button>
@@ -168,7 +166,7 @@
 						<img src="./assets/img/01_header/logo.png" alt="" />
 						<h3>01:16:25:45</h3>
 					</div>
-					<button   class="card__btn ">
+					<button class="card__btn">
 						<i class="ri-shopping-bag-2-fill ri-lg"></i>
 						Place Bid
 					</button>
@@ -196,7 +194,7 @@
 						<h3>01:16:25:45</h3>
 					</div>
 
-					<button   class="card__btn ">
+					<button class="card__btn">
 						<i class="ri-shopping-bag-2-fill ri-lg"></i>
 						Place Bid
 					</button>
@@ -218,7 +216,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<button  class="card__btn ">
+					<button class="card__btn">
 						<i class="ri-shopping-bag-2-fill ri-lg"></i>
 						Place Bid
 					</button>
@@ -260,12 +258,11 @@
 			<div class="divider row-list">
 				<span>Top Seller</span>
 				<div class="right">
-					<i class="ri-arrow-left-s-line ri-1x  btn btn-primary b1"></i>
+					<i class="ri-arrow-left-s-line ri-1x btn btn-primary b1"></i>
 					<i class="ri-arrow-right-s-line ri-1x btn btn-primary b1"></i>
 				</div>
 			</div>
 
-		
 			<div class="seller__wrapper row-list">
 				<div class="seller__avatar">
 					<img src="./assets/img/04_Top Seller/avt-1.jpg" alt="" />
@@ -326,7 +323,6 @@
 					<span>49.3 ETH</span>
 				</div>
 			</div>
-			
 		</section>
 
 		<div class="loadmore container">
@@ -507,14 +503,123 @@
 				<i class="ri-arrow-right-s-line btn btn-primary b1"></i>
 			</div>
 		</section>
+		<section id="collection" class="container">
+			<div class="divider">
+				<span>Popular Collection</span>
+			</div>
+
+			<div class="coll__wrapper row-list">
+				<div class="coll__card">
+					<div class="coll__head row-list">
+						<div class="coll__avatar">
+							<img src="./assets/img/04_Top Seller/avt-2.jpg" alt="" />
+							<i class="ri-check-line ri-1x5"></i>
+						</div>
+						<div class="column">
+							<div class="coll__title">Creative Art Collection</div>
+							<div class="collcreate">Created By Ralph Garraway</div>
+						</div>
+						<i class="ri-heart-3-line ri-1x coll__like">120</i>
+					</div>
+					<div class="coll__box">
+						<img src="./assets/img/06_Popular Collection/box1/collection-item-2.jpg" alt="" />
+						<div class="column">
+							<div class="row-list1 coll_center">
+								<img
+									src="./assets/img/06_Popular Collection/box1/collection-item-top-1.jpg"
+									alt=""
+								/>
+								<img
+									src="./assets/img/06_Popular Collection/box1/collection-item-top-2.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="coll_bottom">
+								<img
+									src="./assets/img/06_Popular Collection/box1/collection-item-bottom-4.jpg"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coll__card">
+					<div class="coll__head row-list">
+						<div class="coll__avatar">
+							<img src="./assets/img/04_Top Seller/avt-2.jpg" alt="" />
+							<i class="ri-check-line ri-1x5"></i>
+						</div>
+						<div class="column">
+							<div class="coll__title">Creative Art Collection</div>
+							<div class="collcreate">Created By Ralph Garraway</div>
+						</div>
+						<i class="ri-heart-3-line ri-1x coll__like">120</i>
+					</div>
+					<div class="coll__box">
+						<img src="./assets/img/06_Popular Collection/box2/img-collection23.jpg" alt="" />
+						<div class="column">
+							<div class="row-list1 coll_center">
+								<img
+									src="./assets/img/06_Popular Collection/box2/img-collection10.jpg"
+									alt=""
+								/>
+								<img
+									src="./assets/img/06_Popular Collection/box2/img-collection24.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="coll_bottom">
+								<img
+									src="./assets/img/06_Popular Collection/box2/img-collection11.jpg"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coll__card">
+					<div class="coll__head row-list">
+						<div class="coll__avatar">
+							<img src="./assets/img/04_Top Seller/avt-2.jpg" alt="" />
+							<i class="ri-check-line ri-1x5"></i>
+						</div>
+						<div class="column">
+							<div class="coll__title">Creative Art Collection</div>
+							<div class="collcreate">Created By Ralph Garraway</div>
+						</div>
+						<i class="ri-heart-3-line ri-1x coll__like">120</i>
+					</div>
+					<div class="coll__box">
+						<img src="./assets/img/06_Popular Collection/box3/img-collection12.jpg" alt="" />
+						<div class="column">
+							<div class="row-list1 coll_center">
+								<img
+									src="./assets/img/06_Popular Collection/box3/img-collection25.jpg"
+									alt=""
+								/>
+								<img
+									src="./assets/img/06_Popular Collection/box3/img-collection18.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="coll_bottom">
+								<img
+									src="./assets/img/06_Popular Collection/box3/img-collection17.jpg"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- Footer -->
 		<footer id="footer" class="footer container">
 			<div class="footer__wrapper">
 				<div class="footer__address">
 					<img src="./assets/img/01_header/logo.png" alt="" />
-<span><b>Axies</b></span>
+					<span><b>Axies</b></span>
 					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, aliquam.</p>
-					
 				</div>
 				<div class="footer__link resource">
 					<h2>Resurces</h2>
@@ -545,13 +650,10 @@
 						<i class="ri-dropbox-line ri-2x"></i>
 						<i class="ri-whatsapp-line ri-2x"></i>
 						<i class="ri-twitter-line ri-2x"></i>
-					<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
 					</div>
-
-				
 				</div>
 			</div>
-		
 
 			<div id="copyright">
 				&copy; 2022 - All Right Reserved - <span>(Inspired by Axies NFT)</span>

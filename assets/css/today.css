@@ -8,7 +8,10 @@ padding: 2rem 0;
    padding: .5rem 1rem;
    font-size: var(--font-size-xxsm);
 }
-
+.today__btn:hover{
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+}
 .todaybid__btn{
     border1: 2px solid var(--dark-color);
     padding: 1rem 1.5rem;
