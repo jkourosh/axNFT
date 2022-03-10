@@ -240,8 +240,8 @@ body.light-theme {
 .btn-primary:hover {
 	background-color: var(--light-color);
 	color: var(--dark-color);
-	transform: scale(1.11);
-	-webkit-transform: scale(1.11);
+	transform: scale(1.13);
+	-webkit-transform: scale(1.13);
 	border: none;
 	/* animation: flip-scale-down-hor 1s ease-in-out 0s 1 normal none; */
 	/* animation: ani-float 3s ease-in-out 0s 1 infinite; */
