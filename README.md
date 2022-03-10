@@ -13,7 +13,7 @@ Inspired by Axies NFT
 
 A little HTML, JS and CSS, you can build a web interface, style it, and add an interaction.
 
-![my space](../assets/img/preview.png)
+![my space](./assets/img/preview.png)
 
 ## Deploy your Space
 
