@@ -185,7 +185,8 @@ i {
 }
 body.light-theme {
 	
-	--dark-bg-gradient-color--: linear-gradient(216.56deg, #c7c3c3 0%,#fff 99.32%);
+	--dark-bg-gradient-color-: linear-gradient(circle at 32% 51%, #c7c3c3 0%,#fff 99.32%);
+	
 	--dark-color1: #fff;
 	--dark-color-: #fff;
 	--dark-color--: #afb6cd;
