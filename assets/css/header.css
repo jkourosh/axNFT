@@ -1,7 +1,7 @@
 .header {
 	border-bottom: 1px solid var(--dark-color);
-	background: var(--dark-bg-color);
-	position1: sticky;
+	background: var(--dark-bg-color-);
+	position1: fixed;
 }
 .navbar {
 	padding-top: 1rem;

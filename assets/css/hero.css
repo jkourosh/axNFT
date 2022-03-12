@@ -1,9 +1,9 @@
-#hero {
-	height: 90vh;
+.hero {
+	top:0rem;
+	height: 60rem;
+	position: relative;
 }
 .hero__wrapper {
-	position: relative;
-
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;

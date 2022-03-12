@@ -38,7 +38,7 @@ themeToggleBtn.addEventListener('click', () => {
 
 const formOpenBtn = selectElement('#search-icon');
 const formCloseBtn = selectElement('#form-close-btn');
-const searchformcontainer = selectElement('#search-form-container');
+const searchformcontainer = selectElement('#search-section');
 //formOpenBtn.addEventListener('click', () => searchformcontainer.classList.add('activated'));
 formOpenBtn.addEventListener('click', () => searchformcontainer.classList.toggle('activated'));
 formCloseBtn.addEventListener('click', () => searchformcontainer.classList.remove('activated'));
