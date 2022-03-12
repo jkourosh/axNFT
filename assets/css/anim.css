@@ -138,7 +138,7 @@ svg {
 
 text {
 	fill: none;
-	stroke: #fbfafc;
+	stroke: var(--light-color);
 	/* linear-gradient(45deg, #6450e6, #cb4fe4); */
 	stroke-width: 0.5px;
 	stroke-linejoin: round;
