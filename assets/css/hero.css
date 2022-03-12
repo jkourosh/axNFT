@@ -56,12 +56,13 @@
 	position: absolute;
 	margin-top: -15rem;
 	z-index: 2;
-	left: 35%;
-	width: 80%;
+	top: 25rem;
+	left: 55%;
+	width: 40%;
 }
 .hero__right--spaceman {
 	width: 85%;
-	margin-top: -8rem;
+	margin-top: -10rem;
 }
 .hero__circle--fill {
 	position: relative;

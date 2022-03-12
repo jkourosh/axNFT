@@ -1,15 +1,27 @@
+.header {
+	border-bottom: 1px solid var(--dark-color);
+	background: var(--dark-bg-color);
+	position1: sticky;
+}
 .navbar {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	position: relative;
-	border-bottom: 1px solid var(--dark-color);
+	position1: absolute;
 	font-size: var(--font-size-sm);
 	font-weight: --font-weight-bold;
 	color: var(--light-color);
 	z-index: 999;
 	justify-content: space-around;
 }
-
+.nav__logo img {
+	display: inline-block;
+}
+.nav__logo h2 {
+	display: inline-block;
+	align-items: baseline;
+	font-size: var(--font-size-xl);
+	font-weight: var(--font-weight-bold);
+}
 .nav__link {
 	margin-right: -0.3rem;
 }
@@ -17,7 +29,6 @@
 	font-size: var(--font-size-sm);
 	padding-right: 1rem;
 }
-
 
 .nav__sun i:hover {
 	transition: all 0.3s ease-in;
