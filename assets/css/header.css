@@ -1,7 +1,7 @@
 .header {
 	top: 0;
 	width: 100%;
-	background: var(--dark-bg-gradient-color-);
+	background1: var(--dark-bg-gradient-color-);
 	border-bottom: 1px solid var(--dark-color);
 	z-index: 9999;
 	position: relative;
