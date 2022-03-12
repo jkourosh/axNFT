@@ -1,6 +1,6 @@
 .hero {
 	top:0rem;
-	height: 60rem;
+	height: 55rem;
 	position: relative;
 }
 .hero__wrapper {
@@ -62,7 +62,7 @@
 }
 .hero__right--spaceman {
 	width: 85%;
-	margin-top: -10rem;
+	margin-top: -7rem;
 }
 .hero__circle--fill {
 	position: relative;

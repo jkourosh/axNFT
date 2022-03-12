@@ -5,12 +5,11 @@
 	border-bottom: 1px solid var(--dark-color);
 	z-index: 9999;
 	position: relative;
-	
+	padding-top: 1rem;
+	padding-bottom: 0rem;
 }
 .navbar {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-
+	
 	font-size: var(--font-size-sm);
 	font-weight: --font-weight-bold;
 	color: var(--light-color);
@@ -125,7 +124,7 @@
 	border-radius: 5rem;
 	position: fixed;
 	display: flex;
-	top: 8.5rem;
+	top: 7.5rem;
 	left: 50%;
 	z-index: 999;
 	opacity: 0;
