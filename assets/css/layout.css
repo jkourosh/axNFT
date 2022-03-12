@@ -320,8 +320,8 @@ d-grid {
 .slide-dot--fill{
 	border: 3px solid var(--light-color--);
 }
-.slide{
-	padding: 2rem;
+.slider{
+	padding: 4rem 2rem;
 	text-align: center;
 }
 
