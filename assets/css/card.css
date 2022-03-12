@@ -9,10 +9,16 @@
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
+
 .card:hover {
-	transform: scale(1.11);
-	-webkit-transform: scale(1.11);
-	
+	cursor: pointer;
+	transform: rotateX(1.2);
+	-webkit-transform: scale(1.2);
+}
+.card img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 1rem;
 }
 .card:hover .card__btn{
 	visibility: visible;
@@ -50,15 +56,8 @@
 	padding: 0.2rem 0.5rem;
 	margin-top: 2rem;
 }
-.card:hover {
-	cursor: pointer;
-	transform: rotateX(1.2);
-}
-.card img {
-	max-width: 25rem;
-	height: auto;
-	border-radius: 1rem;
-}
+
+
 .card__title {
 	display: inline-block;
 
