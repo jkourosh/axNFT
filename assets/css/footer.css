@@ -9,6 +9,7 @@
 	color: var(--light-color);
 	padding: 0.5rem 0;
 }
+
 .footer h1 {
 	color: var(--light-color);
 }
@@ -31,7 +32,8 @@
 }
 
 .footer__address img {
-	width: 20%;display: inline-block;
+	width: 20%;
+	display: inline-block;
 }
 .footer__address h2 {
 	font-size: 6rem;
@@ -42,7 +44,6 @@
 	color: var(--light-color);
 }
 .footer__address span b {
-	
 	font-size: var(--font-size-xl);
 	color: var(--light-color);
 	display: table-caption;
@@ -62,10 +63,12 @@
 	font-size: 1.7rem;
 	font-weight: 100;
 	color: var(--light-color);
+	text-decoration: none;
 }
 
-.footer__link a:hover {
-	font-style: italic;
+.footer:hover a {
+	text-underline-offset: 0.7rem;
+	text-decoration: none;
 }
 
 .footer__news p {

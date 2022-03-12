@@ -9,7 +9,7 @@
 	padding-bottom: 0rem;
 }
 .navbar {
-	
+
 	font-size: var(--font-size-sm);
 	font-weight: --font-weight-bold;
 	color: var(--light-color);
@@ -26,12 +26,18 @@
 	font-weight: var(--font-weight-bold);
 }
 .nav__logo a {
-	text-decoration: none;
+	
 	margin-top: 15rem;
 }
+
+.nav__list a{
+	text-decoration: none;
+}
 .nav__link {
+
 	margin-right: -0.3rem;
 }
+
 .nav__icon {
 	font-size: var(--font-size-sm);
 	padding-right: 1rem;
