@@ -22,6 +22,10 @@
 	font-size: var(--font-size-xl);
 	font-weight: var(--font-weight-bold);
 }
+.nav__logo a{
+	text-decoration: none;
+	margin-top: 15rem;
+}
 .nav__link {
 	margin-right: -0.3rem;
 }
