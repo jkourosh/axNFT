@@ -17,6 +17,7 @@
 	cursor: pointer;
 	transform: scale(1.08);
 	-webkit-transform: scale(1.08);
+	box-shadow: 0 .1rem 2rem var(--light-color);
 }
 
 .coll__card i {

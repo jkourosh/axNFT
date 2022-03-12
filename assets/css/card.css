@@ -12,8 +12,9 @@
 
 .card:hover {
 	cursor: pointer;
-	transform: rotateX(1.2);
-	-webkit-transform: scale(1.2);
+	transform: rotateX(1.11);
+	-webkit-transform: scale(1.11);
+	box-shadow: 0 .1rem 2rem var(--dark-color);
 }
 .card img {
 	max-width: 100%;
