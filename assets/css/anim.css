@@ -53,7 +53,7 @@
 }
 
 .css-selector {
-	background: linear-gradient(115deg, #150d30, #3c335c);
+	background: --light-bg-gradient-color;
 	background-size: 400% 400%;
 	-webkit-animation: bgAnim 2s ease infinite;
 	-moz-animation: bgAnim 2s ease infinite;

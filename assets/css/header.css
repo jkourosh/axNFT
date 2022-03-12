@@ -1,12 +1,16 @@
 .header {
+	top: 0;
+	width: 100%;
+	background: var(--dark-bg-gradient-color-);
 	border-bottom: 1px solid var(--dark-color);
-	background: var(--dark-bg-color-);
-	position1: fixed;
+	z-index: 9999;
+	position: relative;
+	
 }
 .navbar {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	position1: absolute;
+
 	font-size: var(--font-size-sm);
 	font-weight: --font-weight-bold;
 	color: var(--light-color);
@@ -22,7 +26,7 @@
 	font-size: var(--font-size-xl);
 	font-weight: var(--font-weight-bold);
 }
-.nav__logo a{
+.nav__logo a {
 	text-decoration: none;
 	margin-top: 15rem;
 }
@@ -55,7 +59,7 @@
 
 .nav-button {
 	background-color: blueviolet;
-	color: white;
+	color: var(--light-color-);
 	border: none;
 	border-radius: 5px;
 	width: 150px;
@@ -110,7 +114,6 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-	background-color1: #3e8e41;
 }
 
 .search-form-container {
