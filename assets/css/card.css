@@ -1,4 +1,3 @@
-
 .card__wrapper {
 	position: relative;
 	width: 100%;
@@ -20,13 +19,13 @@
 }
 
 .card__box h2 {
-	font-size:var(--font-size-xxsm);    
+	font-size: var(--font-size-xxsm);
 	/* var(--font-size-xxsm); */
 	display: inline-block;
 }
-.card__box1 i{
+.card__box1 i {
 	position: absolute;
-	padding: .5rem;
+	padding: 0.5rem;
 	background-color: var(--dark-color);
 	border-radius: 30%;
 	top: 6rem;
@@ -43,7 +42,7 @@
 	padding: 0.2rem 0.5rem;
 	margin-top: 2rem;
 }
-.card__time{
+.card__time {
 	position: absolute;
 	top: 23rem;
 	left: 30%;
@@ -57,25 +56,27 @@
 	border-radius: 0.8rem;
 	justify-content: center;
 }
-.card__time img{
-width: 14%;
+.card__time img {
+	width: 14%;
 }
-.card__pbid{
-visibility: hidden;
+.card__pbid {
+	visibility: hidden;
 	position: absolute;
 	top: 11rem;
-	left:8rem;
+	left: 8rem;
 	border-radius: 100px/100px;
 	margin: 1rem;
-    border:none;
+	border: none;
 	color: var(--dark-color--);
 	background-color: var(--light-color);
-    padding: 1rem 1.5rem;
-    font-size: var(--font-size-xsm);
+	padding: 1rem 1.5rem;
+	font-size: var(--font-size-xsm);
 	font-weight: var(--font-weight-bold);
-
+	transition: all .3s ease-in-out;
 }
-
+.card__pbid i{
+	color: var(--secondary-color);
+ }
 .card__box > img {
 	padding: 1rem;
 	border-radius: 8%;
@@ -117,13 +118,16 @@ visibility: hidden;
 .card__creator--img {
 	width: 20%;
 	border-radius: 20%;
-	
 }
-.card__dark{
-   color: var(--dark-color);
-   font-family: 'ntfs';
+.card__dark {
+	color: var(--dark-color);
+	font-family: 'ntfs';
 }
 
+.card__box:hover .card__pbid{
+	visibility: visible;
+	transition: all .3s ease-in-out;
+}
 .card__wrapper:hover .card__box {
 	transform: rotateY(25deg);
 }
@@ -134,10 +138,10 @@ visibility: hidden;
 
 .card__wrapper .card__box:hover {
 	transform: rotateY(0deg) scale(1.2);
-	z-index: 1;
-	box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-}
 
+	box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
 
 .card__wrapper .card__box:hover .imgBox::before {
 	opacity: 1;
