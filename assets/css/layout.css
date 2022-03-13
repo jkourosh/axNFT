@@ -1,36 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300;400;600;700;800&display=swap');
 
-font-face {
-	font-family: 'fabrand';
-	src: url('./../font/fa-brands-400.eot');
-	src: url('./../font/fa-brands-400﹖.eot') format('embedded-opentype'),
-		url('./../font/fa-brands-400.woff2') format('woff2'),
-		url('./../font/fa-brands-400.woff') format('woff'),
-		url('./../font/fa-brands-400.ttf') format('truetype'),
-		/* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('./../font/fa-brands-400.svg')
-			format('svg'); /* iOS 4.1- */
-	font-display: swap;
-}
-
-font-face {
-	font-family: 'faduotone';
-	src: url('./../font/fa-duotone-900.eot'); /* IE9*/
-	src: url('./../font/fa-duotone-900﹖.eot') format('embedded-opentype'),
-		/* IE6-IE8 */ url('./../font/fa-duotone-900.woff2') format('woff2'),
-		url('./../font/fa-duotone-900.woff') format('woff'),
-		url('./../font/fa-duotone-900.ttf') format('truetype'),
-		/* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('./../font/fa-duotone-900.svg')
-			format('svg'); /* iOS 4.1- */
-	font-display: swap;
-}
-
-font-face {
-	font-family: 'ntfs';
-	src: url('./../font/nfts.eot'); /* IE9*/
-	src: url('./../font/nfts.woff') format('woff'), url('./../font/nfts.ttf') format('truetype'),
-		/* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('./../font/nfts.svg') format('svg'); /* iOS 4.1- */
-	font-display: swap;
-}
 
 *,
 *::after,
@@ -107,8 +77,8 @@ font-face {
 	--transparent-light-color: rgba(255, 255, 255, 0.05);
 	--transparent-dark-color: rgba(0, 0, 0, 0.75);
 
-	--font-family: 'Poppins', 'faduotone', 'fabrand', sans-serif;
-	--font-size-xxsm: 1.2rem;
+	--font-family: 'Montserrat','Poppins', sans-serif;
+	--font-size-xxsm: 1.3rem;
 	--font-size-xsm: 1.4rem;
 	--font-size-sm: 1.6rem;
 	--font-size-md: 2.4rem;

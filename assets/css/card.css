@@ -1,51 +1,37 @@
 
-.card {
-	width: 25%;
+.card__wrapper {
 	position: relative;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	transform-style: preserve-3d;
+	perspective: 70rem;
+}
+.card__box {
+	position: relative;
+	border-radius: 5%;
+	width: 24%;
 	background-color: var(--dark-color-);
-	padding: 1.2rem 1.2rem 1.2rem 1.2rem;
-	border-radius: 1.5rem;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
+	transition: 0.3s;
+	transform-style: preserve-3d;
 	cursor: pointer;
-	transform: rotateX(1.11);
-	-webkit-transform: scale(1.11);
-	box-shadow: 0 .1rem 2rem var(--dark-color);
-}
-.card img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 1rem;
-}
-.card:hover .card__btn{
-	visibility: visible;
-}
-.card__btn{
-	visibility: hidden;
-	position: absolute;
-	top: 11rem;
-	left:8rem;
-	border-radius: 100px/100px;
-	margin: 1rem;
-    border:none;
-	color: var(--dark-color--);
-	background-color: var(--light-color);
-    padding: 1rem 1.5rem;
-    font-size: var(--font-size-xsm);
-	font-weight: var(--font-weight-bold);
-	
-}
-.bid_show{
-	display: block;
-}
-.card__btn i{
-   color: var(--secondary-color);
+	overflow: hidden;
 }
 
+.card__box h2 {
+	font-size:var(--font-size-xxsm);    
+	/* var(--font-size-xxsm); */
+	display: inline-block;
+}
+.card__box1 i{
+	position: absolute;
+	padding: .5rem;
+	background-color: var(--dark-color);
+	border-radius: 30%;
+	top: 6rem;
+	left: 30%;
+}
 .card__like {
 	position: absolute;
 	top: 0%;
@@ -57,32 +43,68 @@
 	padding: 0.2rem 0.5rem;
 	margin-top: 2rem;
 }
-
-
-.card__title {
-	display: inline-block;
-
-	padding: 2rem 0rem;
-	font-size: var(--font-size-xsm);
-	font-weight: var(--font-weight-bold);
-	color: var(--light-color);
-}
-.card__box {
+.card__time{
 	position: absolute;
 	top: 23rem;
 	left: 30%;
-	display: flex;
-	align-items: center;
-	padding: 0.3rem 0.5rem;
-	font-size: var(--font-size-xsm);
+	width: fit-content;
+	/* display: flex;
+	align-items: center; */
+	padding: 0.3rem 0;
+	font-size: var(--font-size-xxsm);
 	color: var(--light-color);
 	background-color: var(--dark-color---);
 	border-radius: 0.8rem;
+	justify-content: center;
 }
-.card__box img {
-	width: 2.5rem;
-	padding: 0 0.5rem;
+.card__time img{
+width: 14%;
 }
+.card__pbid{
+visibility: hidden;
+	position: absolute;
+	top: 11rem;
+	left:8rem;
+	border-radius: 100px/100px;
+	margin: 1rem;
+    border:none;
+	color: var(--dark-color--);
+	background-color: var(--light-color);
+    padding: 1rem 1.5rem;
+    font-size: var(--font-size-xsm);
+	font-weight: var(--font-weight-bold);
+
+}
+
+.card__box > img {
+	padding: 1rem;
+	border-radius: 8%;
+	display: inline-block;
+	width: fit-content;
+}
+.card__content {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	box-sizing: border-box;
+	z-index: 1;
+	padding: 0 1rem 1.5rem 1rem;
+	font-size: var(--font-size-xxsm);
+}
+
+.card__col-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.card__row-list {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .card__bsc {
 	color: var(--light-color);
 	padding: 0.3rem 1rem;
@@ -90,28 +112,33 @@
 	border-radius: 100px/100px;
 	font-size: var(--font-size-xsm);
 }
-.card__column {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+
+.card__desc1,
+.card__creator--img {
+	width: 20%;
+	border-radius: 20%;
+	
 }
-.card__desc {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+.card__dark{
+   color: var(--dark-color);
+   font-family: 'ntfs';
 }
-.card__desc img {
-	width: 5rem;
-	border-radius: 1rem;
+
+.card__wrapper:hover .card__box {
+	transform: rotateY(25deg);
 }
-.card__creator,
-.card__bid {
-	font-size: var(--font-size-xsm);
-	color: var(--dark-color);
+
+.card__wrapper .card__box:hover ~ .card__box {
+	transform: rotateY(-25deg);
 }
-.card__name,
-.card__fee {
-	font-size: var(--font-size-sm);
-	color: var(--light-color);
+
+.card__wrapper .card__box:hover {
+	transform: rotateY(0deg) scale(1.2);
+	z-index: 1;
+	box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+
+.card__wrapper .card__box:hover .imgBox::before {
+	opacity: 1;
 }

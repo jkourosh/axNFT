@@ -5,23 +5,34 @@
 .today__btn {
 	border: 2px solid var(--dark-color);
 	padding: 0.5rem 1rem;
-	font-size: var(--font-size-xxsm);
+	color: var(--dark-color);
+	font-size: var(--font-size-xxsm); 
 }
 .today__btn:hover {
 	border: 2px solid var(--secondary-color);
 	background-color: transparent;
 }
+.today__btn:hover i{
+color: var(--light-color);
+}
 .todaybid__btn {
 	padding: 1rem 1.5rem;
-	font-size: var(--font-size-xxsm);
+	font-size1: var(--font-size-xxsm);
+	margin: 0;
+	
 }
 
 .today__btn i {
 	padding: 0rem 0rem;
-	color: aliceblue;
+	color: var(--dark-color);
 }
 
 .today__footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 	padding: 1rem 0 0 0;
 	font-size: var(--font-size-xxsm);
+	font-size:x-small;
 }
