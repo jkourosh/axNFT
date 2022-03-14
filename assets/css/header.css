@@ -26,8 +26,11 @@
 	font-weight: var(--font-weight-bold);
 }
 .nav__logo a {
-	
 	margin-top: 15rem;
+	text-decoration: none;
+	font-family1: 'Gilroy-Extrabold';
+    font-weight: 800;
+    font-style: normal;
 }
 
 .nav__list a{
