@@ -249,12 +249,6 @@ body.light-theme {
 	color: var(--dark-color);
 	transform: scale(1.13);
 	-webkit-transform: scale(1.13);
-	border: none;
-	/* animation: flip-scale-down-hor 1s ease-in-out 0s 1 normal none; */
-	/* animation: ani-float 3s ease-in-out 0s 1 infinite; */
-	/* animation: scale-up-center 1s ease 0s 1 normal none; */
-	/* animation: 2s pulsate normal; */
-	/* animation: bounce-in 1s ease-in-out 0s 1 normal; */
 }
 .btn-primary:hover i {
 	color: var(--secondary-color);
@@ -317,6 +311,7 @@ d-grid {
 	background: repeating-linear-gradient(to right, #e250e5 0%, #4b50e6 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-size: var(--font-size-lg);
 }
 .text-grad a {
 	text-decoration: none;

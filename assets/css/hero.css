@@ -36,12 +36,12 @@
 }
 .hero__left--explorer i {
 	color: var(--light-color);
-	-webkit-transform: rotate(45deg);
+	/* -webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	display: inline-block;
+	transform: rotate(45deg); */
+	display1: inline-block;
 }
 .middle {
 	left: 70rem;
@@ -103,7 +103,6 @@
 	border-radius: 50%;
 	border: 2px solid var(--primary-color--);
 	
-	background1: var(--light-bg-gradient-color);
 }
 .size-1 {
 	width: 1rem;

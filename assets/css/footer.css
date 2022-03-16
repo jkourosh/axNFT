@@ -3,7 +3,8 @@
 	position: relative;
 }
 .loadmore {
-	margin: auto;
+	margin: 1rem auto;
+	text-align: center;
 }
 .footer a {
 	color: var(--light-color);
@@ -99,7 +100,7 @@
 }
 .footer__news button {
 	position: absolute;
-	border-radius: 5px;
+	border-radius: .2rem;
 	right: 0.2rem;
 	z-index: 2;
 	border: none;
@@ -139,4 +140,12 @@
 }
 #copyright span {
 	font-style: italic;
+}
+.submit{
+	margin-top: .6rem;
+}
+.submit:hover i{
+ background-color:var(--primary-color);
+ text-decoration: none;
+
 }
