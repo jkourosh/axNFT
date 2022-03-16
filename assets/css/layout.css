@@ -165,13 +165,14 @@ button {
 a {
 	font-size: var(--font-size-xsm);
 	text-decoration: none;
-	text-underline-offset: 0.3rem;
+	text-underline-offset: .5rem;
 	color: var(--light-color);
 	font-weight: var(--font-weight-bold);
 }
 
 a:hover {
 	text-decoration: underline solid 2px var(--secondary-color);
+	transition: all .3 ease-in-out;
 }
 ul {
 	list-style: none;
@@ -343,3 +344,6 @@ d-grid {
 	-webkit-background-clip: text;
 	-webkit-text-stroke: 3px transparent;
 }
+
+
+ 

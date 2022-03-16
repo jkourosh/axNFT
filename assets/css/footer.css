@@ -67,7 +67,7 @@
 }
 
 .footer:hover a {
-	text-underline-offset: 0.7rem;
+	text-underline-offset1: 01.7rem;
 	text-decoration: none;
 }
 
@@ -118,9 +118,8 @@
 .footer__news i:hover {
 	color1: var(--secondary-color);
 	transition: all 0.3s linear;
-	font-style: oblique;
+	
 	text-decoration: underline solid 2px var(--secondary-color);
-	text-underline-offset: 0.3rem;
 	animation: shake-vertical 1s ease 0s 1 normal none;
 }
 

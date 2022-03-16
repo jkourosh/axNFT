@@ -28,7 +28,7 @@
 .nav__logo a {
 	margin-top: 15rem;
 	text-decoration: none;
-	font-family1: 'Gilroy-Extrabold';
+	
     font-weight: 800;
     font-style: normal;
 }
@@ -36,6 +36,7 @@
 .nav__list a{
 	text-decoration: none;
 }
+
 .nav__link {
 
 	margin-right: -0.3rem;
@@ -113,6 +114,9 @@
 	background-color: var(--primary-color);
 
 	color: var(--light-color-);
+}
+.dropdown-content a:hover::before {
+	content: '- ';
 }
 
 /* Show the dropdown menu on hover */
