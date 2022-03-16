@@ -5,8 +5,8 @@
 	border-bottom: 1px solid var(--dark-color);
 	z-index: 9999;
 	position: relative;
-	padding-top: 1rem;
-	padding-bottom: 0rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
 }
 .navbar {
 
@@ -18,6 +18,8 @@
 }
 .nav__logo img {
 	display: inline-block;
+	width: 20%;
+	
 }
 .nav__logo h2 {
 	display: inline-block;

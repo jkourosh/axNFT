@@ -311,7 +311,7 @@ d-grid {
 	background: repeating-linear-gradient(to right, #e250e5 0%, #4b50e6 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: var(--font-size-lg);
+	font-size: var(--font-size-md);
 }
 .text-grad a {
 	text-decoration: none;
