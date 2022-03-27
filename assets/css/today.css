@@ -3,13 +3,13 @@
 	padding: 2rem 0;
 }
 .today__btn {
-	border: 2px solid var(--dark-color);
+
 	padding: 0.5rem 1rem;
 	color: var(--dark-color);
 	font-size: var(--font-size-xxsm); 
 }
 .today__btn:hover {
-	border: 2px solid var(--secondary-color);
+	
 	background-color: transparent;
 }
 .today__btn:hover i{
@@ -17,7 +17,7 @@ color: var(--light-color);
 }
 .todaybid__btn {
 	padding: 1rem 1.5rem;
-	font-size1: var(--font-size-xxsm);
+	
 	margin: 0;
 	
 }

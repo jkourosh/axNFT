@@ -128,13 +128,7 @@ font-face {
 	--item-min-height-sm: 20rem;
 	--item-min-height-md: 30rem;
 }
-* {
-	padding: 0;
-	margin: 0;
 
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -232,7 +226,7 @@ body.light-theme {
 	font-family: inherit;
 	background-color: transparent;
 	outline: 0;
-	box-shadow: none;
+
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	color: var(--light-color);
@@ -240,8 +234,8 @@ body.light-theme {
 }
 .btn-primary {
 	padding: 0.8rem 2.5rem;
-	border: 0.15rem solid var(--secondary-color);
-
+	/* border: 0.15rem solid var(--secondary-color); */
+	box-shadow: 0 0 0 0.2rem var(--secondary-color);
 	margin: 1rem;
 }
 .btn-primary:hover {
@@ -252,6 +246,13 @@ body.light-theme {
 }
 .btn-primary:hover i {
 	color: var(--secondary-color);
+}
+
+.btn-secondary {
+	padding: 0.8rem 2.5rem;
+
+	box-shadow: 0 0 0 0.2rem var(--secondary-color);
+	margin: 1rem;
 }
 .btn-fat {
 	padding: 1.2rem 2.5rem;

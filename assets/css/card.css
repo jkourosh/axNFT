@@ -42,6 +42,9 @@
 	padding: 0.2rem 0.5rem;
 	margin-top: 2rem;
 }
+.card__box i{
+  padding-top: -3rem;
+}
 .card__time {
 	position: absolute;
 	top: 23rem;

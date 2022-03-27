@@ -1,15 +1,14 @@
 .header {
 	top: 0;
 	width: 100%;
-	background1: var(--dark-bg-gradient-color-);
+
 	border-bottom: 1px solid var(--dark-color);
 	z-index: 9999;
 	position: relative;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 .navbar {
-
 	font-size: var(--font-size-sm);
 	font-weight: --font-weight-bold;
 	color: var(--light-color);
@@ -19,7 +18,6 @@
 .nav__logo img {
 	display: inline-block;
 	width: 20%;
-	
 }
 .nav__logo h2 {
 	display: inline-block;
@@ -30,17 +28,18 @@
 .nav__logo a {
 	margin-top: 15rem;
 	text-decoration: none;
-	
-    font-weight: 800;
-    font-style: normal;
-}
 
-.nav__list a{
+	font-weight: 800;
+	font-style: normal;
+}
+.nav__list {
+	padding: 0 1rem;
+}
+.nav__list a {
 	text-decoration: none;
 }
 
 .nav__link {
-
 	margin-right: -0.3rem;
 }
 
@@ -59,7 +58,21 @@
 	justify-content: space-evenly;
 	align-items: center;
 }
+.nav__arrow {
+	position: absolute;
+	width: 0.7rem;
+	height: 0.7rem;
+	top: 35%;
+	right: -1.5rem;
+	border: 2px solid snow;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	transition: all 0.3s ease;
+}
 
+.nav__list:hover .nav__arrow {
+	transform: rotate(225deg);
+}
 .nav__wallet {
 	margin: 0;
 }
@@ -126,15 +139,11 @@
 	display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-}
-
 .search-form-container {
-	width: 30%;
+	width: 25%;
 	margin: auto;
 	max-width: 50%;
-	height: 5vh;
+	height: 8vh;
 	background-color: var(--light-color-);
 	border-radius: 5rem;
 	position: fixed;
@@ -150,30 +159,24 @@
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	gap1: var(--gap);
+
 	text-align: center;
-	justify-content1: flex-start;
 }
 .form {
 	display: flex;
 	justify-content: center;
 	color: var(--light-color);
 }
-.form-input1,
+
 .form-btn {
 	display: inline-block;
-	border1: 2px solid var(--dark-color--);
+
 	padding: 0.5rem 0 0;
 	margin-top: -0.1rem;
 	font-size: var(--font-size-xxsm);
 }
-.form-input1 {
-	border-right: none;
-	width: 100%;
-}
-.form-btn {
-	margin-left1: -0.5rem;
 
+.form-btn {
 	border-left: none;
 	background-color: var(--dark-color);
 	width: 4rem;
@@ -187,9 +190,8 @@
 	color: var(--dark-color);
 	width: 4rem;
 	height: 4rem;
-	top1: 1.5rem;
+
 	right: 0.5rem;
-	border1: 2px solid var(--dark-color---);
 }
 i.ri-close-line {
 	margin: auto;

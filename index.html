@@ -18,7 +18,6 @@
 		<title>Axies NFT</title>
 	</head>
 	<body>
-		<a name="top"></a>
 		<!-- Header -->
 		<header id="header-section" class="header">
 			<nav class="navbar row-list container">
@@ -35,7 +34,8 @@
 					<li class="nav__list">
 						<div class="dropdown">
 							<button class="nav__link">Explore</button>
-							<i class="ri-arrow-down-s-line ri-lg"></i>
+							<span class="nav__arrow"></span>
+							<!-- <i class="ri-arrow-down-s-line ri-lg"></i> -->
 							<div class="dropdown-content">
 								<a href="#">Link 1</a>
 								<a href="#">Link 2</a>
@@ -45,8 +45,9 @@
 					</li>
 					<li class="nav__list">
 						<div class="dropdown">
-							<button class="nav__link" href="#">Activity</button
-							><i class="ri-arrow-down-s-line ri-lg"></i>
+							<button class="nav__link" href="#">Activity</button>
+							<span class="nav__arrow"></span>
+							<!-- <i class="ri-arrow-down-s-line ri-lg"></i> -->
 							<div class="dropdown-content">
 								<a href="#">Link 1</a>
 								<a href="#">Link 2</a>
@@ -57,7 +58,8 @@
 					<li class="nav__list">
 						<div class="dropdown">
 							<button class="nav__link" href="#">Community</button>
-							<i class="ri-arrow-down-s-line ri-lg"></i>
+							<span class="nav__arrow"></span>
+							<!-- <i class="ri-arrow-down-s-line ri-lg"></i> -->
 							<div class="dropdown-content">
 								<a href="#">Link 1</a>
 								<a href="#">Link 2</a>
@@ -67,8 +69,9 @@
 					</li>
 					<li class="nav__list">
 						<div class="dropdown">
-							<button class="nav__link" href="#">Pages</button
-							><i class="ri-arrow-down-s-line ri-lg"></i>
+							<button class="nav__link" href="#">Pages</button>
+							<span class="nav__arrow"></span>
+							<!-- <i class="ri-arrow-down-s-line ri-lg"></i> -->
 							<div class="dropdown-content">
 								<a href="#">Link 1</a>
 								<a href="#">Link 2</a>
@@ -78,8 +81,9 @@
 					</li>
 					<li class="nav__list">
 						<div class="dropdown">
-							<button class="nav__link" href="#">Contact</button
-							><i class="ri-arrow-down-s-line ri-lg"></i>
+							<button class="nav__link" href="#">Contact</button>
+							<span class="nav__arrow"></span>
+							<!-- <i class="ri-arrow-down-s-line ri-lg"></i> -->
 							<div class="dropdown-content">
 								<a href="#">Link 1</a>
 								<a href="#">Link 2</a>
@@ -176,6 +180,7 @@
 			<div class="card__wrapper">
 				<div class="card__box">
 					<i class="ri-heart-3-line card__like">800</i>
+
 					<div class="card__time row-list">
 						<img src="./assets/img/01_header/logo.png" alt="" />
 						<h4>02:16:25:45</h4>
@@ -473,17 +478,18 @@
 								<span class="card__fee">4.89 ETH</span>
 							</div>
 						</div>
-				
-					<div class="today__footer row-list">
-						<button class="btn btn-primary todaybid__btn">
-							<i class="ri-shopping-bag-2-fill ri-lg"></i>
-							Place Bid
-						</button>
-						<div>
-							<i class="ri-refresh-line ri-lg"></i>
-							<span class="card__bid">View History</span>
+
+						<div class="today__footer row-list">
+							<button class="btn btn-primary todaybid__btn">
+								<i class="ri-shopping-bag-2-fill ri-lg"></i>
+								Place Bid
+							</button>
+							<div>
+								<i class="ri-refresh-line ri-lg"></i>
+								<span class="card__bid">View History</span>
+							</div>
 						</div>
-					</div>	</div>
+					</div>
 				</div>
 				<div class="card__box">
 					<i class="ri-heart-3-line card__like">100</i>
@@ -498,27 +504,28 @@
 							<span class="card__bsc">BSC</span>
 						</div>
 						<div class="card__row-list">
-						<img src="./assets/img/04_Top Seller/avt-3.jpg" alt="" class="card__creator--img" />
-						<div class="card__col-list">
-							<span class="card__dark">Creator </span>
-							<span class="card__name">Fredi Carpenter</span>
+							<img src="./assets/img/04_Top Seller/avt-3.jpg" alt="" class="card__creator--img" />
+							<div class="card__col-list">
+								<span class="card__dark">Creator </span>
+								<span class="card__name">Fredi Carpenter</span>
+							</div>
+							<div class="card__col-list">
+								<span class="card__dark">Current Bid</span>
+								<span class="card__fee">4.89 ETH</span>
+							</div>
 						</div>
-						<div class="card__col-list">
-							<span class="card__dark">Current Bid</span>
-							<span class="card__fee">4.89 ETH</span>
+
+						<div class="today__footer">
+							<button class="btn btn-primary todaybid__btn">
+								<i class="ri-shopping-bag-2-fill ri-lg"></i>
+								Place Bid
+							</button>
+							<div>
+								<i class="ri-refresh-line ri-lg"></i>
+								<span class="card__dark">View History</span>
+							</div>
 						</div>
-						</div>
-					
-					<div class="today__footer ">
-						<button class="btn btn-primary todaybid__btn">
-							<i class="ri-shopping-bag-2-fill ri-lg"></i>
-							Place Bid
-						</button>
-						<div>
-							<i class="ri-refresh-line ri-lg"></i>
-							<span class="card__dark">View History</span>
-						</div>
-					</div></div>
+					</div>
 				</div>
 				<div class="card__box">
 					<img src="./assets/img/05_Today's Picks/card-item-7.jpg" alt="" />
@@ -533,27 +540,28 @@
 							<span class="card__bsc">BSC</span>
 						</div>
 						<div class="card__row-list">
-						<img src="./assets/img/04_Top Seller/avt-4.jpg" alt="" class="card__creator--img" />
-						<div class="card__col-list">
-							<span class="card__dark"> Creator</span>
-							<span class="card__name">Tayler Cavington</span>
+							<img src="./assets/img/04_Top Seller/avt-4.jpg" alt="" class="card__creator--img" />
+							<div class="card__col-list">
+								<span class="card__dark"> Creator</span>
+								<span class="card__name">Tayler Cavington</span>
+							</div>
+							<div class="card__col-list">
+								<span class="card__dark">Current Bid</span>
+								<span class="card__fee">4.89 ETH</span>
+							</div>
 						</div>
-						<div class="card__col-list">
-							<span class="card__dark">Current Bid</span>
-							<span class="card__fee">4.89 ETH</span>
+
+						<div class="today__footer">
+							<button class="btn btn-primary todaybid__btn">
+								<i class="ri-shopping-bag-2-fill ri-lg"></i>
+								Place Bid
+							</button>
+							<div>
+								<i class="ri-refresh-line ri-lg"></i>
+								<span class="card__dark">View History</span>
+							</div>
 						</div>
-						</div>
-					
-					<div class="today__footer ">
-						<button class="btn btn-primary todaybid__btn">
-							<i class="ri-shopping-bag-2-fill ri-lg"></i>
-							Place Bid
-						</button>
-						<div>
-							<i class="ri-refresh-line ri-lg"></i>
-							<span class="card__dark">View History</span>
-						</div>
-					</div></div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -730,7 +738,7 @@
 							<i class="ri-play-fill ri-2x submit"></i>
 						</button>
 					</form>
-					<div class="footer__news--icon ">
+					<div class="footer__news--icon">
 						<i class="ri-instagram-line ri-2x"></i>
 						<i class="ri-dropbox-line ri-2x"></i>
 						<i class="ri-whatsapp-line ri-2x"></i>
@@ -739,7 +747,7 @@
 					</div>
 				</div>
 			</div>
-		
+
 			<div id="copyright">
 				&copy; 2022 - All Right Reserved - <span>(Inspired by Axies NFT)</span>
 			</div>
