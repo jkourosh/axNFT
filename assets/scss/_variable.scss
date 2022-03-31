@@ -1,6 +1,3 @@
-
-
-
 $light-color: #fff;
 $light-color-: #afafbf;
 $light-color--: #afb6cd;
@@ -63,10 +60,24 @@ $dark-bg-gradient-color-: linear-gradient(
 	#110c25,
 	#0e0822
 );
+$light-bg-gradient-color-: linear-gradient(
+	to right top,
+	#98979b,
+	#9e9ca3,
+	#a4a2aa,
+	#aaa7b2,
+	#b0adba,
+	#b7b4c1,
+	#bebcc8,
+	#c5c3cf,
+	#cfced7,
+	#d9d8de,
+	#e4e3e6,
+	#eeeeee
+);
 
 $transparent-light-color: rgba(255, 255, 255, 0.05);
 $transparent-dark-color: rgba(0, 0, 0, 0.75);
-
 
 $font-family-opensans: 'Open Sans', sans-serif;
 $font-family-gilroy: 'Gilroy', sans-serif;
@@ -74,22 +85,19 @@ $font-family-urbanist: 'Urbanist', sans-serif;
 $font-family-montserrat: 'Montserrat', sans-serif;
 $font-family-popins: 'Poppins', sans-serif;
 
-
-
-
 $gap: 2rem;
 $margin-sm: 2rem;
 $margin-md: 3rem;
 $item-min-height-sm: 20rem;
 $item-min-height-md: 30rem;
 
-$font-sizes:(
-    xxsm: 1.3rem,
-    xsm: 1.4rem,
-    sm: 1.6rem,
-    md: 2.4rem,
-    lg: 3rem,
-    xl: 4rem,
+$font-sizes: (
+	xxsm: 1.3rem,
+	xsm: 1.4rem,
+	sm: 1.6rem,
+	md: 2.4rem,
+	lg: 3rem,
+	xl: 4rem,
 );
 $font-weights: (
 	regular: 300,
@@ -104,6 +112,8 @@ $font-weights: (
 	@return map-get($font-sizes, $size);
 }
 
+  
+
 @mixin flex-between($direction) {
 	display: flex;
 	flex-direction: $direction;
@@ -111,7 +121,9 @@ $font-weights: (
 	align-items: center;
 }
 
-@mixin theme($light-theme: true) {
+
+
+@mixin light-theme($light-theme: true) {
 	@if $light-theme {
 		background: lighten($primary-color, 100);
 		color: darken($secondary-color, 100);

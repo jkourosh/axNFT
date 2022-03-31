@@ -18,6 +18,10 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 
+// function switchTheme(el) {
+// 	document.querySelector('html').className = 'theme-' + el.className;
+//   }
+
 // Switch theme/add to local storage
 const bodyElement = document.body;
 const themeToggleBtn = selectElement('#theme-toggle-btn');

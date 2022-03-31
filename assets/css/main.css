@@ -503,6 +503,11 @@ body {
   transition: background-color 0.25s color 0.25s;
 }
 
+body.light-theme {
+  background: -webkit-gradient(linear, left bottom, right top, from(#98979b), color-stop(#9e9ca3), color-stop(#a4a2aa), color-stop(#aaa7b2), color-stop(#b0adba), color-stop(#b7b4c1), color-stop(#bebcc8), color-stop(#c5c3cf), color-stop(#cfced7), color-stop(#d9d8de), color-stop(#e4e3e6), to(#eeeeee));
+  background: linear-gradient(to right top, #98979b, #9e9ca3, #a4a2aa, #aaa7b2, #b0adba, #b7b4c1, #bebcc8, #c5c3cf, #cfced7, #d9d8de, #e4e3e6, #eeeeee);
+}
+
 button,
 span,
 div,

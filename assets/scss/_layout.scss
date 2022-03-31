@@ -11,42 +11,20 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
+ 
 body {
 	font-family: $font-family-gilroy;
 	font-size: FS(sm);
 	color: $light-color;
-	background: $dark-bg-gradient-color-;
+	background: $dark-bg-gradient-color-; 
 	letter-spacing: 1px;
 	transition: background-color 0.25s color 0.25s;
 	
-	&.l {
-		$dark-bg-gradient-color-: linear-gradient(
-			to right top,
-			#98979b,
-			#9e9ca3,
-			#a4a2aa,
-			#aaa7b2,
-			#b0adba,
-			#b7b4c1,
-			#bebcc8,
-			#c5c3cf,
-			#cfced7,
-			#d9d8de,
-			#e4e3e6,
-			#eeeeee
-		);
-
-		$dark-color1: #fff;
-		$dark-color-: rgb(235, 233, 233);
-		$dark-color--: #afb6cd;
-		$dark-color---: #5a6981ff;
-		$dark-color----: #565b63;
-
-		$light-color: #101010;
-		$light-color-: #343441ff;
-		$light-color--: #1b1b2b;
-		$light-color---: #10101d;
+	&.light-theme {
+		background: $light-bg-gradient-color-;
+	
 	}
+	
 }
 
 button,
