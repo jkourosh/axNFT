@@ -11,20 +11,18 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
- 
+
 body {
 	font-family: $font-family-gilroy;
 	font-size: FS(sm);
 	color: $light-color;
-	background: $dark-bg-gradient-color-; 
+	background: $dark-bg-gradient-color-;
 	letter-spacing: 1px;
 	transition: background-color 0.25s color 0.25s;
-	
+
 	&.light-theme {
 		background: $light-bg-gradient-color-;
-	
 	}
-	
 }
 
 button,
@@ -82,33 +80,44 @@ i {
 	font-family: inherit;
 	background-color: transparent;
 	outline: 0;
-	border-radius: 100px/100px;
 	cursor: pointer;
+	box-shadow: 0 0 0 0.2rem $secondary-color;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
+	border-radius: 100px/100px;
 }
 .btn-primary {
 	padding: 1rem 2.5rem;
 	margin: 1rem;
+
 	/* border: 0.15rem solid $secondary-color; */
-	box-shadow: 0 0 0 0.2rem $secondary-color;
+	//box-shadow: 0 0 0 0.2rem $secondary-color;
 	&:hover {
 		background-color: $light-color;
 		color: $dark-color;
 		transform: scale(1.13);
 		-webkit-transform: scale(1.13);
+		box-shadow: none;
 		& i {
 			color: $secondary-color;
 		}
 	}
 }
 .btn-secondary {
-	padding: 0.8rem 2.5rem;
-	margin: 1rem;
-	box-shadow: 0 0 0 0.2rem $secondary-color;
+	box-shadow: 0 0 0 0.2rem $dark-color;
+	padding: 0.8rem 1rem;
+	margin: .5rem;
+	color: $dark-color;
+	font-size: FS(xsm);
+	&:hover {
+		transform: scale(1.13);
+		-webkit-transform: scale(1.13);
+		background-color: transparent;color: $light-color;
+		
+	}
 }
-.btn-fat {
-	padding: 1.2rem 2.5rem;
+.btn-circle {
+	padding: .3rem ;
 }
 
 .row-list {
@@ -172,21 +181,22 @@ d-grid {
 		text-decoration: none;
 	}
 }
-.slide-dot {
-	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	border: 1px solid $light-color--;
-	border-radius: 50%;
-	margin: 0.5rem;
 
-	&--fill {
-		border: 3px solid $light-color--;
-	}
-}
 .slider {
 	padding: 4rem 2rem;
 	text-align: center;
+	
+	&-dot {
+		display: inline-block;
+		width: 1rem;
+		height: 1rem;
+		border: 1px solid $light-color--;
+		border-radius: 50%;
+		margin: 0.5rem;
+		&--fill {
+			border: 3px solid $light-color--;
+		}
+	}
 }
 
 .s1 {

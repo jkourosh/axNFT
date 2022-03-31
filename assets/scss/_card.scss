@@ -6,7 +6,6 @@
 	flex-wrap: nowrap;
 	transform-style: preserve-3d;
 	perspective: 70rem;
-
 	&:hover .card__box {
 		transform: rotateY(25deg);
 	}
@@ -19,7 +18,6 @@
 		& ~ .card__box {
 			transform: rotateY(-25deg);
 		}
-		
 	}
 }
 .card__box {
@@ -55,8 +53,11 @@
 			font-size: FS(xxsm);
 		}
 	}
+	&:hover .card__pbid {
+		visibility: visible;
+		transition: all 0.3s ease-in-out;
+	}
 }
-
 .card__time {
 	position: absolute;
 	top: 23rem;
@@ -133,9 +134,4 @@
 .card__dark {
 	color: $dark-color;
 	font-family: $font-family-gilroy;
-}
-
-.card__box:hover .card__pbid {
-	visibility: visible;
-	transition: all 0.3s ease-in-out;
 }
