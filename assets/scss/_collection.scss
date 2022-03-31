@@ -1,0 +1,131 @@
+.column {
+	margin-left: -4rem;
+	justify-content: space-between;
+}
+
+.coll__card {
+	position: relative;
+	background-color: $dark-color-;
+	border-radius: 2rem;
+	padding: 1rem 1rem 0rem 1rem;
+	font-size: FS(xxsm);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.08);
+		-webkit-transform: scale(1.08);
+		box-shadow: 0 0.1rem 2rem $light-color;
+	}
+
+	& i {
+		background-color: $dark-color--;
+		padding: 0.2rem 0.8rem;
+		border-radius: 50px/50px;
+	}
+}
+
+.coll__title {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: max-content;
+	align-self: auto;
+	font-size: FS(sm);
+	font-weight: FW(bold);
+}
+.coll__avatar {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
+	& img {
+		width: 70%;
+		border-radius: 1rem;
+	}
+	& i {
+		position: absolute;
+		top: 6rem;
+		left: 6rem;
+		font-size: FS(sm);
+		background-color: $secondary-color;
+		border-radius: 1rem;
+		padding: 0;
+	}
+}
+.coll__like {
+	flex-grow: 0;
+	margin-top: -5rem;
+	color: $light-color;
+	background-color: $dark-color-;
+	padding: 0rem;
+}
+.coll__box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1rem 0;
+	& img {
+		width: 50%;
+		padding: 0rem;
+		border-radius: 2rem;
+	}
+}
+.coll_center {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 0 0 0 5rem;
+	& img {
+		width: 48%;
+	}
+}
+.coll_bottom img {
+	width: 100%;
+	height: 20rem;
+	object-fit: cover;
+	padding: 1rem 0 0 5rem;
+	border-radius: 2rem;
+}
+
+.create__row {
+	justify-content: flex-start;
+}
+.create__box {
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	& p {
+		font-size: FS(xsm);
+	}
+	& h3 {
+		padding: 3rem 0;
+	}
+	& i {
+		cursor: pointer;
+		text-align: center;
+		padding: 1rem;
+		margin: 3rem 0;
+		border-radius: 2rem;
+
+		&:hover {
+			transition: all 1s ease-in-out;
+			-webkit-transition: all 1s ease-in-out;
+			-webkit-animation: bounce-in 1s ease-in-out 0s 1 normal;
+			-moz-animation: bounce-in 1s ease-in-out 0s 1 normal;
+			-ms-animation: bounce-in 1s ease-in-out 0s 1 normal;
+			animation: bounce-in 1s ease-in-out 0s 1 normal;
+		}
+	}
+}
+
+.green {
+	background-color: $sepia-color--;
+}
+.blue {
+	background-color: $secondary-color;
+}
+.red {
+	background-color: $primary-color--;
+}
+.gray {
+	background-color: $sefia-color;
+}

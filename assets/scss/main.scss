@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,500,800');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0;300;500;800&display=swap');
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./../font/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('./../font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./../font/Gilroy-Regular.woff2') format('woff2'),
+        url('./../font/Gilroy-Regular.woff') format('woff'),
+        url('./../font/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-Extrabold';
+    src: url('./../font/Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Black'),
+        url('./../font/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('./../font/Gilroy-Extrabold.woff2') format('woff2'),
+        url('./../font/Gilroy-Extrabold.woff') format('woff'),
+        url('./../font/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@import 'variable';
+@import 'anim';
+@import 'layout';
+@import 'header';
+@import 'hero';
+@import 'card';
+@import 'seller';
+@import 'today';
+@import 'collection';
+@import 'footer';

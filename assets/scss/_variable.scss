@@ -1,0 +1,134 @@
+
+
+
+$light-color: #fff;
+$light-color-: #afafbf;
+$light-color--: #afb6cd;
+$light-color---: #5a6981ff;
+$light-color----: #565b63;
+
+$dark-color: #343441ff;
+$dark-color-: #1b1b2b;
+$dark-color--: #10101d;
+
+$primary-color: #a977c6ff;
+$primary-color-: #a448cd;
+$primary-color--: #8419a5;
+$primary-color---: #350b41;
+$primary-color----: #221738;
+
+$secondary-color: #5142fc;
+$secondary-color-: #262165;
+$secondary-color--: #1f1736;
+
+$light-color: #fff;
+$light-color-: #e1e1e1;
+$light-color--: #f8f8f8;
+
+$dark-color: #7a798a;
+$dark-color-: #343441ff;
+$dark-color--: #1f1f2c;
+$dark-color---: #14141f;
+
+$sefia-color: #d3bb9cff;
+$sefia-color-: #9d8062ff;
+$sepia-color--: #7b4e1dff;
+
+$hover-light-color: $secondary-color;
+$hover-dark-color: $secondary-color;
+
+$light-gradient-color: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+
+$light-bg-gradient-color: linear-gradient(45deg, #6450e6, #8b24a0);
+$light-bg-gradient-color-: radial-gradient(
+	circle at 10% 11%,
+	#3d2abe 0%,
+	#1e1735 22%,
+	#8b24a0 100%
+);
+$dark-bg-gradient-color: radial-gradient(circle at 32% 51%, #14141f 0%, #1e1735 22%, #0e0822 100%);
+$dark-bg-gradient-color-: radial-gradient(circle at 10% 11%, #1b0120 1%, #1e1735 22%, #1e1735 100%);
+$dark-bg-gradient-color-: linear-gradient(
+	to right top,
+	#3d2abe,
+	#3827a3,
+	#322488,
+	#2d216e,
+	#271d55,
+	#221a48,
+	#1e173c,
+	#191430,
+	#16122c,
+	#130f29,
+	#110c25,
+	#0e0822
+);
+
+$transparent-light-color: rgba(255, 255, 255, 0.05);
+$transparent-dark-color: rgba(0, 0, 0, 0.75);
+
+
+$font-family-opensans: 'Open Sans', sans-serif;
+$font-family-gilroy: 'Gilroy', sans-serif;
+$font-family-urbanist: 'Urbanist', sans-serif;
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-popins: 'Poppins', sans-serif;
+
+
+
+
+$gap: 2rem;
+$margin-sm: 2rem;
+$margin-md: 3rem;
+$item-min-height-sm: 20rem;
+$item-min-height-md: 30rem;
+
+$font-sizes:(
+    xxsm: 1.3rem,
+    xsm: 1.4rem,
+    sm: 1.6rem,
+    md: 2.4rem,
+    lg: 3rem,
+    xl: 4rem,
+);
+$font-weights: (
+	regular: 300,
+	medium: 500,
+	bold: 800,
+);
+@function FW($weight) {
+	@return map-get($font-weights, $weight);
+}
+
+@function FS($size) {
+	@return map-get($font-sizes, $size);
+}
+
+@mixin flex-between($direction) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin theme($light-theme: true) {
+	@if $light-theme {
+		background: lighten($primary-color, 100);
+		color: darken($secondary-color, 100);
+	}
+	$primary-color: #00a0e9;
+	$secondary-color: #f5f5f5;
+	$tertiary-color: #f5f5f5;
+	$quaternary-color: #f5f5f5;
+	$quinary-color: #f5f5f5;
+	$senary-color: #f5f5f5;
+}
+
+@mixin dark-theme {
+	$primary-color: #00a0e9;
+	$secondary-color: #f5f5f5;
+	$tertiary-color: #f5f5f5;
+	$quaternary-color: #f5f5f5;
+	$quinary-color: #f5f5f5;
+	$senary-color: #f5f5f5;
+}

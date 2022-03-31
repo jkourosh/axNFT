@@ -3,30 +3,26 @@
 	padding: 2rem 0;
 }
 .today__btn {
-
 	padding: 0.5rem 1rem;
 	color: var(--dark-color);
-	font-size: var(--font-size-xxsm); 
-}
-.today__btn:hover {
-	
-	background-color: transparent;
-}
-.today__btn:hover i{
-color: var(--light-color);
+	font-size: var(--font-size-xxsm);
+	&:hover {
+		background-color: transparent;
+		& i {
+			color: var(--light-color);
+		}
+	}
 }
 .todaybid__btn {
 	padding: 1rem 1.5rem;
-	
+
 	margin: 0;
-	
-}
 
-.today__btn i {
-	padding: 0rem 0rem;
-	color: var(--dark-color);
+	& i {
+		padding: 0rem 0rem;
+		color: var(--dark-color);
+	}
 }
-
 .today__footer {
 	display: flex;
 	flex-direction: row;
@@ -34,5 +30,5 @@ color: var(--light-color);
 	align-items: center;
 	padding: 1rem 0 0 0;
 	font-size: var(--font-size-xxsm);
-	font-size:x-small;
+	font-size: x-small;
 }

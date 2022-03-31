@@ -1,0 +1,148 @@
+.footer {
+	padding-top: 2rem;
+	position: relative;
+	& a {
+		color: $light-color;
+		padding: 0.5rem 0;
+	}
+	& h1 {
+		color: $light-color;
+	}
+	&:hover a {
+		
+		text-decoration: none;
+	}
+}
+.loadmore {
+	margin: 1rem auto;
+	text-align: center;
+}
+
+.footer__wrapper {
+	padding: 6rem 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	& h2 {
+		font-size: 2.2rem;
+		padding: 2rem 0;
+		color: $light-color;
+	}
+}
+.footer__address {
+	padding-top: 7rem;
+	width: 20%;
+	& img {
+		width: 20%;
+		display: inline-block;
+	}
+	& h2 {
+		font-size: 6rem;
+		color: $light-color;
+		display: inline;
+	}
+	& span {
+		color: $light-color;
+	}
+	& span b {
+		font-size: FS(xl);
+		color: $light-color;
+		display: table-caption;
+	}
+
+	& p {
+		font-size: 1rem;
+		color: $light-color;
+	}
+}
+.footer__link {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	& a {
+		font-size: 1.7rem;
+		font-weight: 100;
+		color: $light-color;
+		text-decoration: none;
+	}
+}
+
+.footer__news {
+	& p {
+		font-size: 1rem;
+		color: $light-color;
+		font-weight: 700px;
+	}
+	&--form {
+		width: 30rem;
+		padding: 1rem 0;
+		position: relative;
+		color: $dark-color;
+	}
+	& input {
+		padding: 1rem;
+		width: 100%;
+		outline: none;
+		height: 4.5rem;
+		border: 0.1rem solid $dark-color;
+		border-radius: 2rem;
+		font-size: 1.5rem;
+		color: #eee;
+	}
+
+	& input::placeholder {
+		color: $light-color--;
+	}
+	& button {
+		position: absolute;
+		border-radius: 0.2rem;
+		right: 0.2rem;
+		z-index: 2;
+		border: none;
+		top: 1rem;
+		height: 1rem;
+		transform: translateX(2px);
+	}
+
+	& i {
+		color: $light-color;
+		margin: 2rem 0.5rem;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&:hover {
+			
+			transition: all 0.3s linear;
+
+			text-decoration: underline solid 2px $secondary-color;
+			animation: shake-vertical 1s ease 0s 1 normal none;
+		}
+	}
+	&--icon {
+		text-align: center;
+	}
+}
+#copyright {
+	width: fit-content;
+	margin: auto;
+	padding: 0.4rem;
+	font-weight: bold;
+	color: $light-color;
+	background: -webkit-linear-gradient(#333, #eee);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	& span {
+		font-style: italic;
+	}
+}
+.submit {
+	margin-top: 0.6rem;
+	&:hover i {
+		background-color: $primary-color;
+		text-decoration: none;
+	}
+}
+

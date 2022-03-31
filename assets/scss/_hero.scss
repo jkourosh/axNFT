@@ -1,0 +1,143 @@
+.hero {
+	top: 0rem;
+	height: 55rem;
+	position: relative;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__left {
+		display: inline-block;
+
+		& h1 {
+			position: relative;
+			color: $light-color;
+			font-size: 6rem;
+			font-family: $font-family-urbanist;
+		}
+		& h2 {
+			position: relative;
+			color: $light-color;
+			font-size: 5rem;
+		}
+		& p {
+			margin-top: -2rem;
+			padding: 4rem 0;
+		}
+		& span {
+			font-family: $font-family-urbanist;
+			font-size: 5rem;
+		}
+		&--explorer {
+			color: $light-color;
+		}
+		& i {
+			color: $light-color;
+		}
+	}
+}
+.middle {
+	left: 70rem;
+}
+
+.hero__right {
+	& img {
+		position: relative;
+		z-index: 9;
+	}
+	&--blob {
+		position: absolute;
+		margin-top: -15rem;
+		z-index: 2;
+		top: 25rem;
+		left: 55%;
+		width: 40%;
+	}
+	&--spaceman {
+		width: 85%;
+		margin-top: -7rem;
+	}
+}
+.hero__circle {
+	&--fill {
+		position: relative;
+		border-radius: 50%;
+		background: $light-bg-gradient-color;
+	}
+	&--outline {
+		position: absolute;
+		border-radius: 50%;
+		border: 2px solid $primary-color--;
+	}
+}
+.p1 {
+	top: 10rem;
+	left: 50%;
+}
+.p2 {
+	top: 0rem;
+	margin-top: -5rem;
+	left: 70%;
+}
+.p3 {
+	top: 30rem;
+	left: -5rem;
+}
+.p4 {
+	top: 10rem;
+	left: 10%;
+}
+.p5 {
+	top: 5rem;
+	left: 85%;
+}
+.p6 {
+	top: 40rem;
+	left: 80%;
+}
+.p7 {
+	top: 5rem;
+	left: 85%;
+}
+
+.size-1 {
+	width: 1rem;
+	height: 1rem;
+}
+.size-2 {
+	width: 2rem;
+	height: 2rem;
+}
+.size-3 {
+	width: 3rem;
+	height: 3rem;
+}
+
+.size-4 {
+	width: 4rem;
+	height: 4rem;
+}
+
+.strokeme {
+	font-size: 5rem;
+	color: transparent;
+	text-shadow: 1px 1px 0 rgb(173, 4, 173), 1px -1px 0 rgb(58, 38, 243), -1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.hero__sell {
+	width: 50rem;
+}
+
+
+.self {
+	color: #14141f;
+	background: linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6);
+	background-size: 100% 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 3px transparent;
+}
