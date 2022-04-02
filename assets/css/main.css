@@ -741,9 +741,10 @@ header {
   width: 100%;
   border-bottom: 1px solid #7a798a;
   z-index: 9999;
-  position: relative;
+  position: fixed;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background: radial-gradient(circle at 32% 51%, #14141f 0%, #1e1735 22%, #0e0822 100%);
   font-family: "Gilroy", sans-serif;
 }
 
@@ -985,7 +986,7 @@ i.ri-close-line {
 }
 
 .hero {
-  top: 0rem;
+  top: 5rem;
   height: 55rem;
   position: relative;
 }
@@ -1587,34 +1588,34 @@ i.ri-close-line {
   width: 30rem;
   padding: 1rem 0;
   position: relative;
-  color: #7a798a;
+  color: #343441ff;
 }
 
 .footer__news input {
   padding: 1rem;
   width: 100%;
   outline: none;
-  height: 4.5rem;
+  height: 4rem;
   border: 0.1rem solid #7a798a;
   border-radius: 2rem;
   font-size: 1.5rem;
-  color: #eee;
+  color: #7a798a;
 }
 
 .footer__news input::-webkit-input-placeholder {
-  color: #f8f8f8;
+  color: #5a6981ff;
 }
 
 .footer__news input:-ms-input-placeholder {
-  color: #f8f8f8;
+  color: #5a6981ff;
 }
 
 .footer__news input::-ms-input-placeholder {
-  color: #f8f8f8;
+  color: #5a6981ff;
 }
 
 .footer__news input::placeholder {
-  color: #f8f8f8;
+  color: #5a6981ff;
 }
 
 .footer__news button {
@@ -1650,8 +1651,15 @@ i.ri-close-line {
 }
 
 .footer__social i {
-  padding: 1rem;
-  background: radial-gradient(circle at 32% 51%, #14141f 0%, #1e1735 22%, #0e0822 100%);
+  -webkit-box-shadow: inset 0 0 0.1rem 0.1rem #fff;
+          box-shadow: inset 0 0 0.1rem 0.1rem #fff;
+  padding: 0.5rem;
+  margin: 0.1rem;
+}
+
+.footer__social i:hover {
+  text-decoration: none;
+  color: #a977c6ff;
 }
 
 .footer__anim i:hover {
@@ -1683,7 +1691,7 @@ i.ri-close-line {
 }
 
 .submit:hover i {
-  background-color: #a977c6ff;
+  background-color: #7a798a;
   text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,9 +3,10 @@ header {
 	width: 100%;
 	border-bottom: 1px solid $dark-color;
 	z-index: 9999;
-	position: relative;
+	position: fixed;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+	background: $dark-bg-gradient-color;
 	font-family: $font-family-gilroy;
 }
 nav {

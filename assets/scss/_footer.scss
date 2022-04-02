@@ -119,21 +119,21 @@
 			width: 30rem;
 			padding: 1rem 0;
 			position: relative;
-			color: $dark-color;
+			color: $dark-color-;
 		}
 		& input {
 			padding: 1rem;
 			width: 100%;
 			outline: none;
-			height: 4.5rem;
+			height: 4rem;
 			border: 0.1rem solid $dark-color;
 			border-radius: 2rem;
 			font-size: 1.5rem;
-			color: #eee;
+			color: $dark-color;
 		}
 
 		& input::placeholder {
-			color: $light-color--;
+			color: $light-color---;
 		}
 		& button {
 			position: absolute;
@@ -162,18 +162,23 @@
 	}
 	&__social {
 		text-align: center;
-
+		
 		& i {
-			padding: 1rem;
-			background: $dark-bg-gradient-color;
-			
+			box-shadow: inset 0 0 0.1rem 0.1rem $light-color;
+			padding: 0.5rem;
+			margin: 0.1rem;
+			&:hover {
+				text-decoration: none;
+				color: $primary-color;
+				
+			}
 		}
 	}
-	&__anim i{
+	&__anim i {
 		&:hover {
 			color: $dark-bg-gradient-color;
-				animation: shake-vertical 1s ease 0s 1 normal none;
-			}
+			animation: shake-vertical 1s ease 0s 1 normal none;
+		}
 	}
 
 	// &__anim{
@@ -198,7 +203,7 @@
 .submit {
 	margin-top: 0.6rem;
 	&:hover i {
-		background-color: $primary-color;
+		background-color: $dark-color;
 		text-decoration: none;
 	}
 }
