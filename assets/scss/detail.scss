@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,500,800');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0;300;500;800&display=swap');
+
+@import 'variable';
+@import 'anim';
+@import 'layout';
+@import 'card';
+@import 'footer';
+
+body {
+	background: $dark-color--;
+}
+header {
+	top: 0;
+	width: 100%;
+	height: 20vh;
+	border-bottom: 1px solid $light-color;
+	z-index: 9999;
+	position1: fixed;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	background: url('./../img/id/bg.jpg') no-repeat;
+}
+.nav {
+	top: 0;
+	font-family: $font-family-poppins;
+	&__wrapper {
+		@include flex-between(row);
+	}
+
+	&__menu {
+		@include flex-between(row);
+		&-item {
+			padding: 0 2rem;
+
+			& a {
+				text-decoration: none;
+			}
+			&:hover .nav__arrow {
+				transform: rotate(225deg);
+			}
+		}
+	}
+	&__brand {
+		@include flex-between(row);
+		& img {
+			display: inline-block;
+			height: 4rem;
+			width: auto;
+		}
+		& h2 {
+			display: inline-block;
+			align-items: baseline;
+			font-family: $font-family-montserrat;
+			font-size: FS(xl);
+			font-weight: FW(bold);
+		}
+	}
+	&__arrow {
+		position: absolute;
+		width: 0.7rem;
+		height: 0.7rem;
+		top: 35%;
+		right: -1.5rem;
+		border: 2px solid snow;
+		border-width: 0 2px 2px 0;
+		transform: rotate(45deg);
+		transition: all 0.3s ease;
+	}
+	&__breadcrumb {
+		text-align: center;
+		& h1 {
+		}
+		& h3 {
+			font-family: $font-family-poppins;
+			font-size: FS(xsm);
+			font-weight: FW(bold);
+			color: $dark-color;
+			& span {
+				color: $light-color;
+			}
+		}
+	}
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+
+	/* Dropdown Content (Hidden by Default) */
+	&-content {
+		display: none;
+		position: absolute;
+		background-color: $light-color-;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+
+		/* Links inside the dropdown */
+		& a {
+			color: $dark-color--;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		/* Change color of dropdown links on hover */
+		& a:hover {
+			background-color: $primary-color;
+
+			color: $light-color-;
+		}
+		& a:hover::before {
+			content: '- ';
+		}
+	}
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.search-form-container {
+	width: 26%;
+	margin: auto;
+	max-width: 50%;
+	height: 3rem;
+	background-color: $light-color-;
+	border-radius: 5rem;
+	position: fixed;
+	display: flex;
+	top: 7.5rem;
+	left: 50%;
+	z-index: 999;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 0.5s;
+	&.activated {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	color: $light-color;
+	&-btn {
+		display: inline-block;
+		padding: 0.4rem 0 0;
+		margin-top: -0.1rem;
+		font-size: FS(xxsm);
+		border-left: none;
+		color: $dark-color;
+		width: 4rem;
+	}
+
+	&-note {
+		font-size: FS(xsm);
+		align-self: flex-end;
+	}
+	&-close-btn {
+		position: absolute;
+		color: $dark-color;
+		width: 4rem;
+		height: 4rem;
+		top: -0.3rem;
+		right: 0.3rem;
+	}
+
+	&-container-inner {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+i.ri-close-line {
+	margin: auto;
+}
+
+.idhero {
+	@include flex-between(row);
+	& > * {
+		flex: 1 1 0;
+		padding: 4rem;
+	}
+	&__left {
+	}
+	& img {
+		width: 100%;
+		height: auto;
+		border-radius: 0.8rem;
+	}
+	&__like {
+		@include flex-between(row);
+		& > * {
+			@include flex-between(row);
+		}
+		&-box {
+			background-color: $dark-color---;
+			padding: 0.5rem 1rem;
+			border-radius: 100px/100px;
+			margin: 1rem 1rem 1rem 0;
+			& i {
+				padding: 0.5rem;
+			}
+		}
+		&-circle {
+			& i {
+				background-color: $dark-color-;
+				border-radius: 50%;
+				padding: 0.8rem;
+				margin-left: 1rem;
+			}
+		}
+	}
+	&__bott {
+		@include flex-between(row);
+		& > * {
+			@include flex-between(row);
+		}
+		&-box {
+			font-size: FS(xxsm);
+			background-color: $dark-color-;
+			padding: 2rem 1rem;
+			border-radius: 2rem;
+			margin: 1rem 1rem 1rem 0;
+			& i {
+				padding: 0.5rem;
+			}
+			& img {
+				width: 20%;
+				border-radius: 1rem;
+			}
+			&-name {
+				padding: 0;
+
+				& h3 {
+					color: $dark-color;
+				}
+			}
+		}
+	}
+	&__pab{
+		width: 100%;
+		margin: 2rem 0;
+	}
+}
+
+/* Style the tab */
+.hero__tab-list {
+	overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.hero__tab-list button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.hero__tab-list button:hover {
+	background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.hero__tab-list button.active {
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.hero__tab-content {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
