@@ -2,6 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300;500;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0;300;500;800&display=swap");
+@font-face {
+  font-family: 'Gilroy';
+  src: url("./../font/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("./../font/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("./../font/Gilroy-Regular.woff2") format("woff2"), url("./../font/Gilroy-Regular.woff") format("woff"), url("./../font/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Extrabold';
+  src: url("./../font/Gilroy-Extrabold.eot");
+  src: local("Gilroy Extrabold"), local("Gilroy-Black"), url("./../font/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"), url("./../font/Gilroy-Extrabold.woff2") format("woff2"), url("./../font/Gilroy-Extrabold.woff") format("woff"), url("./../font/Gilroy-Extrabold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 .rotate {
   -webkit-animation-name: ani-rotate;
           animation-name: ani-rotate;
@@ -1228,6 +1244,26 @@ header {
           align-items: center;
 }
 
+.nav__wrapper a {
+  text-decoration: none;
+}
+
+.nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .nav__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1246,10 +1282,7 @@ header {
 
 .nav__menu-item {
   padding: 0 2rem;
-}
-
-.nav__menu-item a {
-  text-decoration: none;
+  font-weight: 800;
 }
 
 .nav__menu-item:hover .nav__arrow {
@@ -1284,7 +1317,8 @@ header {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gilroy", sans-serif;
+  font-size: 3rem;
   font-weight: 800;
 }
 
@@ -1322,6 +1356,11 @@ header {
 
 .nav__breadcrumb h3 span {
   color: #fff;
+}
+
+.nav__wallet {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .nav__dropdown {
@@ -1362,60 +1401,69 @@ header {
   display: block;
 }
 
-.search-form-container {
-  width: 26%;
-  margin: auto;
-  max-width: 50%;
-  height: 3rem;
-  background-color: #e1e1e1;
-  border-radius: 5rem;
-  position: fixed;
+.nav__search-form-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 7.5rem;
-  left: 50%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0.5rem 2rem;
+  background-color: #e1e1e1;
+  border-radius: 5rem;
+  position: fixed;
+  top: 6.3rem;
   z-index: 999;
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  left: 57%;
 }
 
-.search-form-container.activated {
+.nav__search-form-container.activated {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.form {
+.nav__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   color: #fff;
 }
 
-.form-btn {
+.nav__form-note {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.nav__form-btn {
   display: inline-block;
   padding: 0.4rem 0 0;
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   border-left: none;
   color: #7a798a;
   width: 4rem;
 }
 
-.form-note {
-  font-size: 1.2rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.form-close-btn {
+.nav__form-close-btn {
   position: absolute;
   color: #7a798a;
   width: 4rem;
@@ -1424,8 +1472,7 @@ header {
   right: 0.3rem;
 }
 
-.form-container-inner {
-  margin: auto;
+.nav__form-container-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1433,7 +1480,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
 }
 
 i.ri-close-line {
@@ -1695,15 +1741,6 @@ main {
   -webkit-transform: scale(1.11);
 }
 
-.divider {
-  padding-top: 8rem;
-}
-
-.card__wrapper {
-  position: relative;
-}
-
-/* Style the tab */
 .idhero__tab-list {
   overflow: hidden;
 }
@@ -1728,10 +1765,29 @@ main {
   color: #a977c6ff;
 }
 
-/* Style the tab content */
 .idhero__tab-content {
   display: none;
   padding: 6px 12px;
   border-top: none;
+}
+
+.divider {
+  padding-top: 8rem;
+}
+
+.card__wrapper {
+  position: relative;
+}
+
+.moon-icon {
+  display: none;
+}
+
+.light-theme .sun-icon {
+  display: none;
+}
+
+.light-theme .moon-icon {
+  display: block;
 }
 /*# sourceMappingURL=detail.css.map */
