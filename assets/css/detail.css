@@ -1200,7 +1200,7 @@ header {
   position: relative;
   padding: 0rem 0;
   border-bottom: 1px solid #a1a1a1;
-  background: url("/assets/img/itemdetail/bg.jpg") no-repeat;
+  background: url("./assets/img/itemdetail/bg.jpg") no-repeat;
   background-attachment: fixed;
   background-size: auto;
   font-size: 1.6rem;
