@@ -7,7 +7,12 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon.png" />
 		<link rel="stylesheet" href="./assets/css/remixicon.css" />
 		<link rel="stylesheet" href="./assets/css/detail.css" />
-		<title>ItemDetail</title>
+		<title>Item Details</title>
+		<script>
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			</script>
+			
 	</head>
 	<body>
 		<header class="container">
@@ -98,8 +103,8 @@
 			</nav>
 
 			<div class="nav__breadcrumb">
-				<h1>Item Detail 1</h1>
-				<h3>Home / Explore / <span>Item Detail 1</span></h3>
+				<h1>Item Details 1</h1>
+				<h3>Home / Explore / <span>Item Details 1</span></h3>
 			</div>
 
 				<!-- Search -->
@@ -165,7 +170,7 @@
 								<span>4.89 ETH</span>
 								<h4>=$12,246</h4>
 							</div>
-							<div class="idhero__bott-box idhero__cc">Countdown <span>00:00:00</span></div>
+							<div class="idhero__bott-box idhero__cc">Countdown <span>04:19:39:48</span></div>
 						</div>
 						<button class="idhero__pab btn btn-secondary">
 							<i class="ri-shopping-basket-line ri-1x"></i>
@@ -174,7 +179,7 @@
 
 						<!-- Tab links -->
 						<div class="idhero__tab-list">
-							<button class="tablink" onclick="openCity(event, 'Bid')">Bid History</button>
+							<button class="tablink" onclick="openCity(event, 'Bid')" id="defaultOpen">Bid History</button>
 							<button class="tablink" onclick="openCity(event, 'Info')">Info</button>
 							<button class="tablink" onclick="openCity(event, 'Prov')">Provenance</button>
 						</div>
@@ -182,7 +187,7 @@
 						<!-- Tab content -->
 						<div id="Bid" class="idhero__tab-content">
 							
-							<div class="idhero__seller activated">
+							<div class="idhero__seller">
 								<div class="idhero__seller-avatar">
 									<img src="./assets/img/04_Top Seller/avt-3.jpg" alt="" />
 									<i class="ri-check-line ri-1x5"></i>
@@ -245,6 +250,12 @@
 					</div>
 				</div>
 			</section>
+
+
+
+
+
+
 
 			 <section id="card-section" class="container">
 				<div class="card__sec">
@@ -451,6 +462,11 @@
 			</div>
 		</footer>
 		<!-- CustomScript -->
+		<script>
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			</script>
+			
 		<script src="./assets/js/main.js"></script>
 	</body>
 </html>

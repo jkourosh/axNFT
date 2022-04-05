@@ -33,7 +33,7 @@
 @import 'footer';
 
 body {
-	background-color: $dark-color-;
+	background: $dark-color---;
 }
 header {
 	top: 0;
@@ -44,7 +44,7 @@ header {
 	padding: 0rem 0;
 	border-bottom: 1px solid $light-color--;
 	background: url('./assets/img/itemdetail/bg.jpg') no-repeat;
-	background-attachment: fixed;
+
 	background-size: auto;
 	font-size: FS(md);
 }
@@ -108,7 +108,7 @@ header {
 			padding: 2rem 0;
 		}
 		& h3 {
-			font-family: $font-family-poppins;
+			font-family: $font-family-montserrat;
 			font-size: FS(xsm);
 			font-weight: FW(bold);
 			color: $dark-color;
@@ -118,8 +118,8 @@ header {
 		}
 	}
 	&__wallet {
-		margin-left : 2rem;
-		margin-right : 2rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 	&__dropdown {
 		position: relative;
@@ -179,7 +179,7 @@ header {
 	&__form {
 		display: flex;
 		justify-content: flex-start;
-		color: $light-color;	
+		color: $light-color;
 		&-note {
 			font-size: FS(xsm);
 			text-align: right;
@@ -194,7 +194,6 @@ header {
 			width: 4rem;
 		}
 
-	
 		&-close-btn {
 			position: absolute;
 			color: $dark-color;
@@ -205,10 +204,8 @@ header {
 		}
 
 		&-container-inner {
-		
 			display: flex;
 			flex-direction: column;
-			
 		}
 	}
 }
@@ -219,6 +216,7 @@ main {
 	position: relative;
 }
 .idhero {
+	background-color: $dark-color---;
 	@include flex-between(row);
 	justify-content: space-between;
 	align-items: flex-start;
@@ -238,20 +236,25 @@ main {
 	}
 	&__right {
 		width: 40%;
+		& h2 {
+			font-size: 2.5rem;
+		}
 		& p {
 			color: $dark-color;
+			padding: 2rem 0;
 		}
 	}
 	&__like {
 		@include flex-between(row);
+		padding: 2rem 0;
 		& > * {
 			@include flex-between(row);
 		}
 		&-box {
-			background-color: $dark-color---;
+			background-color: $dark-color----;
 			padding: 0.5rem 1rem;
 			border-radius: 100px/100px;
-			margin: 1rem 1rem 1rem 0;
+			margin: 0rem 1rem;
 			& i {
 				padding: 0.5rem;
 			}
@@ -274,11 +277,11 @@ main {
 		}
 		&-box {
 			justify-content: flex-start;
-			font-size: FS(xxsm);
+			font-size: FS(xsm);
 			background-color: $dark-color-;
 			padding: 0.7rem 1rem;
 			border-radius: 1rem;
-			margin: 2rem 0;
+
 			&:first-child {
 				margin-right: 3rem;
 			}
@@ -303,11 +306,13 @@ main {
 	}
 	&__cc {
 		font-size: FS(xsm);
+		padding: 1rem 1rem;
 		&:first-child {
-			margin-right: 3rem;
+			margin-right: 1rem;
 		}
 		& span {
 			margin-left: 2rem;
+			font-weight: FW(bold);
 		}
 		& h4 {
 			font-size: FS(xsm);
@@ -316,6 +321,7 @@ main {
 	}
 	&__pab {
 		width: 100%;
+		padding: 1rem 0;
 		margin: 2rem 0;
 		color: $light-color;
 	}
@@ -323,12 +329,15 @@ main {
 	&__seller {
 		@include flex-between(row);
 		width: auto;
-		cursor: pointer;
-		font-family: $font-family-poppins;
-		font-size: FS(xsm);
+		
+		font-family: $font-family-montserrat;
+		font-size: FS(sm);
 		color: $light-color;
+		border-bottom: 1px solid $dark-color-;
+		padding: 0.5rem 0;
 		transition: all 0.3s ease-in-out;
 		-webkit-transition: all 0.3s ease-in-out;
+		
 		&-avatar {
 			@include flex-between(row);
 			& img {
@@ -348,41 +357,50 @@ main {
 				background-color: $secondary-color;
 				font-size: FS(sm);
 			}
-			&--name h3 {
-				display: inline;
+			&--name {
+				& h3 {
+					margin-left: 0;
+					display: inline;
+					color: $light-color--;
+					font-size: FS(xxsm);
+				}
+				& h4 {
+					font-size: FS(xxsm);
+				}
 			}
-		}
-
-		&:hover {
-			transform: scale(1.11);
-			-webkit-transform: scale(1.11);
+			&:hover1 {
+				transform: scale(1.11);
+				-webkit-transform: scale(1.11);
+			}
 		}
 	}
 	&__tab {
 		&-list {
+			
 			overflow: hidden;
+			font-weight: FW(bold);
 			& button {
 				background-color: inherit;
 				float: left;
-				border: none;
+				border-bottom: 1px solid $dark-color;
 				outline: none;
 				cursor: pointer;
 				padding: 14px 16px;
 				transition: 0.3s;
 				&:hover {
-					color: $primary-color;
+					color: $secondary-color;
 				}
 
 				/* Create an active/current tablink class */
 				&.active {
-					color: $primary-color;
+					color: $secondary-color;
 				}
+				
 			}
 		}
 		&-content {
 			display: none;
 			padding: 6px 12px;
-
 			border-top: none;
 		}
 	}
@@ -405,3 +423,4 @@ main {
 		display: block;
 	}
 }
+

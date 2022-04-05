@@ -1205,7 +1205,7 @@ d-grid {
 }
 
 body {
-  background-color: #343441ff;
+  background: #14141f;
 }
 
 header {
@@ -1217,7 +1217,6 @@ header {
   padding: 0rem 0;
   border-bottom: 1px solid #a1a1a1;
   background: url("./assets/img/itemdetail/bg.jpg") no-repeat;
-  background-attachment: fixed;
   background-size: auto;
   font-size: 1.6rem;
 }
@@ -1348,7 +1347,7 @@ header {
 }
 
 .nav__breadcrumb h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
   color: #7a798a;
@@ -1491,6 +1490,7 @@ main {
 }
 
 .idhero {
+  background-color: #14141f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1530,8 +1530,13 @@ main {
   width: 40%;
 }
 
+.idhero__right h2 {
+  font-size: 2.5rem;
+}
+
 .idhero__right p {
   color: #7a798a;
+  padding: 2rem 0;
 }
 
 .idhero__like {
@@ -1548,6 +1553,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2rem 0;
 }
 
 .idhero__like > * {
@@ -1567,10 +1573,10 @@ main {
 }
 
 .idhero__like-box {
-  background-color: #14141f;
+  background-color: #0d0d1a;
   padding: 0.5rem 1rem;
   border-radius: 100px/100px;
-  margin: 1rem 1rem 1rem 0;
+  margin: 0rem 1rem;
 }
 
 .idhero__like-box i {
@@ -1621,11 +1627,10 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   background-color: #343441ff;
   padding: 0.7rem 1rem;
   border-radius: 1rem;
-  margin: 2rem 0;
 }
 
 .idhero__bott-box:first-child {
@@ -1653,14 +1658,16 @@ main {
 
 .idhero__cc {
   font-size: 1.2rem;
+  padding: 1rem 1rem;
 }
 
 .idhero__cc:first-child {
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
 
 .idhero__cc span {
   margin-left: 2rem;
+  font-weight: 800;
 }
 
 .idhero__cc h4 {
@@ -1670,6 +1677,7 @@ main {
 
 .idhero__pab {
   width: 100%;
+  padding: 1rem 0;
   margin: 2rem 0;
   color: #fff;
 }
@@ -1689,10 +1697,11 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: auto;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
   color: #fff;
+  border-bottom: 1px solid #343441ff;
+  padding: 0.5rem 0;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
@@ -1733,22 +1742,30 @@ main {
 }
 
 .idhero__seller-avatar--name h3 {
+  margin-left: 0;
   display: inline;
+  color: #a1a1a1;
+  font-size: 0.8rem;
 }
 
-.idhero__seller:hover {
+.idhero__seller-avatar--name h4 {
+  font-size: 0.8rem;
+}
+
+.idhero__seller-avatar:hover1 {
   transform: scale(1.11);
   -webkit-transform: scale(1.11);
 }
 
 .idhero__tab-list {
   overflow: hidden;
+  font-weight: 800;
 }
 
 .idhero__tab-list button {
   background-color: inherit;
   float: left;
-  border: none;
+  border-bottom: 1px solid #7a798a;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -1758,11 +1775,11 @@ main {
 }
 
 .idhero__tab-list button:hover {
-  color: #a977c6ff;
+  color: #5142fc;
 }
 
 .idhero__tab-list button.active {
-  color: #a977c6ff;
+  color: #5142fc;
 }
 
 .idhero__tab-content {
