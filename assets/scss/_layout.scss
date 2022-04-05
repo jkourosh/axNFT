@@ -21,10 +21,14 @@ body {
 	transition: background-color 0.25s color 0.25s;
 
 	&.light-theme {
+		background: $light-bg-gradient-color;
+	}
+}
+header{
+	&.light-theme {
 		background: $light-bg-gradient-color-;
 	}
 }
-
 button,
 span,
 div,
@@ -39,7 +43,7 @@ button {
 	cursor: pointer;
 }
 a {
-	font-size: FS(xsm);
+	font-size: FS(md);
 	text-decoration: none;
 	text-underline-offset: 0.5rem;
 	color: $light-color;
@@ -156,7 +160,7 @@ d-grid {
 	justify-content: space-between;
 	color: $light-color;
 	font-weight: FW(bold);
-	font-size: FS(lg);
+	font-size: FS(lgx);
 	padding: 3rem 0;
 }
 .title {
@@ -175,7 +179,7 @@ d-grid {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: FS(md);
+	font-size: FS(mdx);
 
 	& a {
 		text-decoration: none;

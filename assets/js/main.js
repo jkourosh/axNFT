@@ -59,7 +59,7 @@ function openCity(evt, cityName) {
 	var i, tabcontent, tablinks;
   
 	// Get all elements with class="tabcontent" and hide them
-	tabcontent = document.getElementsByClassName("hero__tab-content");
+	tabcontent = document.getElementsByClassName("idhero__tab-content");
 	for (i = 0; i < tabcontent.length; i++) {
 	  tabcontent[i].style.display = "none";
 	}

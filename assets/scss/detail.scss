@@ -10,20 +10,23 @@
 @import 'footer';
 
 body {
-	background: $dark-color--;
+	background-color: $dark-color-;
 }
 header {
 	top: 0;
 	width: 100%;
-	height: 20vh;
-	border-bottom: 1px solid $light-color;
+	height: 9vh;
 	z-index: 9999;
-	position1: fixed;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	background: url('./../img/id/bg.jpg') no-repeat;
+	position: relative;
+	padding: 0rem 0;
+	border-bottom: 1px solid $light-color--;
+	background: url('/assets/img/itemdetail/bg.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: auto;
+	font-size: FS(md);
 }
 .nav {
+	position: relative;
 	top: 0;
 	font-family: $font-family-poppins;
 	&__wrapper {
@@ -70,8 +73,12 @@ header {
 		transition: all 0.3s ease;
 	}
 	&__breadcrumb {
+		position: relative;
+		display: block;
 		text-align: center;
+		padding: 2rem 0;
 		& h1 {
+			padding: 2rem 0;
 		}
 		& h3 {
 			font-family: $font-family-poppins;
@@ -83,45 +90,44 @@ header {
 			}
 		}
 	}
-}
 
-.dropdown {
-	position: relative;
-	display: inline-block;
+	&__dropdown {
+		position: relative;
+		display: inline-block;
 
-	/* Dropdown Content (Hidden by Default) */
-	&-content {
-		display: none;
-		position: absolute;
-		background-color: $light-color-;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-		z-index: 1;
+		/* Dropdown Content (Hidden by Default) */
+		&-content {
+			display: none;
+			position: absolute;
+			background-color: $light-color-;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
 
-		/* Links inside the dropdown */
-		& a {
-			color: $dark-color--;
-			padding: 12px 16px;
-			text-decoration: none;
+			/* Links inside the dropdown */
+			& a {
+				color: $dark-color--;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+
+			/* Change color of dropdown links on hover */
+			& a:hover {
+				background-color: $primary-color;
+
+				color: $light-color-;
+				&::before {
+					content: '- ';
+				}
+			}
+		}
+
+		&:hover &-content {
 			display: block;
-		}
-
-		/* Change color of dropdown links on hover */
-		& a:hover {
-			background-color: $primary-color;
-
-			color: $light-color-;
-		}
-		& a:hover::before {
-			content: '- ';
 		}
 	}
 }
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
 .search-form-container {
 	width: 26%;
 	margin: auto;
@@ -180,19 +186,33 @@ header {
 i.ri-close-line {
 	margin: auto;
 }
-
+main {
+	position: relative;
+}
 .idhero {
 	@include flex-between(row);
+	justify-content: space-between;
+	align-items: flex-start;
+
+	padding-top: 18rem ;
 	& > * {
-		flex: 1 1 0;
-		padding: 4rem;
+		
+		margin-right: 2rem;
 	}
 	&__left {
+		width: 50%;
+		padding-right: 5rem;
+		& img {
+			max-width: 110%;
+			height: auto;
+			border-radius: 0.8rem;
+		}
 	}
-	& img {
-		width: 100%;
-		height: auto;
-		border-radius: 0.8rem;
+	&__right {
+		width: 40%;
+		& p {
+			color: $dark-color;
+		}
 	}
 	&__like {
 		@include flex-between(row);
@@ -219,65 +239,127 @@ i.ri-close-line {
 	}
 	&__bott {
 		@include flex-between(row);
+		justify-content: space-between;
+
 		& > * {
 			@include flex-between(row);
 		}
 		&-box {
+			justify-content: flex-start;
 			font-size: FS(xxsm);
 			background-color: $dark-color-;
-			padding: 2rem 1rem;
-			border-radius: 2rem;
-			margin: 1rem 1rem 1rem 0;
+			padding: 0.7rem 1rem;
+			border-radius: 1rem;
+			margin: 2rem 0;
+			&:first-child {
+				margin-right: 3rem;
+			}
+
 			& i {
 				padding: 0.5rem;
 			}
 			& img {
 				width: 20%;
 				border-radius: 1rem;
+				margin-right: 1rem;
 			}
 			&-name {
 				padding: 0;
 
 				& h3 {
+					font-size: 0.9rem; // FS(xxsm);
 					color: $dark-color;
 				}
 			}
 		}
 	}
-	&__pab{
+	&__cc {
+		font-size: FS(xsm);
+		&:first-child {
+			margin-right: 3rem;
+		}
+		& span {
+			margin-left: 2rem;
+		}
+		& h4 {
+			font-size: FS(xsm);
+			color: $dark-color;
+		}
+	}
+	&__pab {
 		width: 100%;
 		margin: 2rem 0;
+		color: $light-color;
+	}
+
+	&__seller {
+		@include flex-between(row);
+		width: auto;
+		cursor: pointer;
+		font-family: $font-family-poppins;
+		font-size: FS(xsm);
+		color: $light-color;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		&-avatar {
+			@include flex-between(row);
+			& img {
+				width: 4rem;
+				height: 4rem;
+				border-radius: 1rem;
+				margin-right: 1rem;
+			}
+			& i {
+				position: relative;
+				z-index: 999;
+				top: 1rem;
+				left: -2rem;
+				width: 1.5rem;
+				height: 1.5rem;
+				border-radius: 50%;
+				background-color: $secondary-color;
+				font-size: FS(sm);
+			}
+			&--name h3{
+				display: inline;
+			}
+		}
+
+		&:hover {
+			transform: scale(1.11);
+			-webkit-transform: scale(1.11);
+		}
 	}
 }
-
+.divider{
+	padding-top: 8rem;
+}
+.card__wrapper {
+	position: relative;
+}
 /* Style the tab */
-.hero__tab-list {
+.idhero__tab-list {
 	overflow: hidden;
-}
+	& button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		&:hover {
+			color: $primary-color;
+		}
 
-/* Style the buttons that are used to open the tab content */
-.hero__tab-list button {
-	background-color: inherit;
-	float: left;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	transition: 0.3s;
+		/* Create an active/current tablink class */
+		&.active {
+			color: $primary-color;
+		}
+	}
 }
-
-/* Change background color of buttons on hover */
-.hero__tab-list button:hover {
-	background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.hero__tab-list button.active {
-	background-color: #ccc;
-}
-
 /* Style the tab content */
-.hero__tab-content {
+.idhero__tab-content {
 	display: none;
 	padding: 6px 12px;
 	border: 1px solid #ccc;

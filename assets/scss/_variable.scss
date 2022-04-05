@@ -93,12 +93,13 @@ $item-min-height-sm: 20rem;
 $item-min-height-md: 30rem;
 
 $font-sizes: (
-	xxsm: 1.3rem,
-	xsm: 1.4rem,
-	sm: 1.6rem,
-	md: 2.4rem,
-	lg: 3rem,
-	xl: 4rem,
+	xxsm:.8rem,
+	xsm: 1.2rem,
+	sm: 1.4rem,
+	md: 1.6rem,
+	mdx: 2.4rem,
+	lgx: 3rem,
+	lgxx: 4rem,
 );
 $font-weights: (
 	regular: 300,

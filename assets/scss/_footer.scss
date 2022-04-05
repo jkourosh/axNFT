@@ -6,7 +6,7 @@
 		transition: all 1s ease-in-out;
 		-webkit-transition: all 1s ease-in-out;
 		& p {
-			font-size: FS(xsm);
+			font-size: FS(sm);
 		}
 		& h3 {
 			padding: 3rem 0;
@@ -86,13 +86,13 @@
 			color: $light-color;
 		}
 		& span b {
-			font-size: FS(xl);
+			font-size: FS(lgxx);
 			color: $light-color;
 			display: table-caption;
 		}
 
 		& p {
-			font-size: 1rem;
+			font-size: FS(md);	
 			color: $light-color;
 		}
 	}

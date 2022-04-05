@@ -30,7 +30,7 @@
 	cursor: pointer;
 	overflow: hidden;
 	& h2 {
-		font-size: FS(xxsm);
+		font-size: FS(xsm);
 		display: inline-block;
 	}
 	& > img {
@@ -43,14 +43,14 @@
 		position: absolute;
 		top: 0%;
 		left: 73%;
-		font-size: FS(sm);
+		font-size: FS(md);
 		color: $light-color;
 		background-color: $dark-color-;
 		border-radius: 0.8rem;
 		padding: 0.2rem 0.5rem;
 		margin-top: 2rem;
 		& i {
-			font-size: FS(xxsm);
+			font-size: FS(xsm);
 		}
 	}
 	&:hover .card__pbid {
@@ -66,7 +66,7 @@
 	/* display: flex;
 	align-items: center; */
 	padding: 0.3rem 0;
-	font-size: FS(xxsm);
+	font-size: FS(xsm);
 	color: $light-color;
 	background-color: $dark-color---;
 	border-radius: 0.8rem;
@@ -87,7 +87,7 @@
 	color: $dark-color--;
 	background-color: $light-color;
 	padding: 1rem 1.5rem;
-	font-size: FS(xsm);
+	font-size: FS(sm);
 	font-weight: FW(bold);
 	transition: all 0.3s ease-in-out;
 
@@ -104,7 +104,7 @@
 	box-sizing: border-box;
 	z-index: 1;
 	padding: 0 1rem 1.5rem 1rem;
-	font-size: FS(xxsm);
+	font-size: FS(xsm);
 }
 
 .card__col-list {
@@ -124,7 +124,7 @@
 	padding: 0.3rem 1rem;
 	background-color: $secondary-color;
 	border-radius: 100px/100px;
-	font-size: FS(xsm);
+	font-size: FS(sm);
 }
 
 .card__creator--img {
