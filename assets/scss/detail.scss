@@ -104,12 +104,16 @@ header {
 		display: block;
 		text-align: center;
 		padding: 2rem 0;
+		& a{
+			color: $dark-color;
+			
+		}
 		& h1 {
 			padding: 2rem 0;
 		}
-		& h3 {
+		& h3 {display: inline;
 			font-family: $font-family-montserrat;
-			font-size: FS(xsm);
+			font-size: FS(sm);
 			font-weight: FW(bold);
 			color: $dark-color;
 			& span {
@@ -379,6 +383,7 @@ main {
 			
 			overflow: hidden;
 			font-weight: FW(bold);
+			
 			& button {
 				background-color: inherit;
 				float: left;
