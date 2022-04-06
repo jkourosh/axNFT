@@ -18,6 +18,20 @@
   font-style: normal;
 }
 
+#tick {
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  top: 35%;
+  right: -1.5rem;
+  border: 2px solid #14ce0d;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .rotate {
   -webkit-animation-name: ani-rotate;
           animation-name: ani-rotate;
@@ -528,7 +542,7 @@ button {
 }
 
 a {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-decoration: none;
   text-underline-offset: 0.5rem;
   color: #fff;
@@ -552,7 +566,7 @@ img {
 }
 
 i {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .ri-lg {
@@ -696,6 +710,7 @@ d-grid {
   display: block;
   color: #fff;
   font-weight: 800;
+  font-size: 2.7rem;
 }
 
 .text-grad {
@@ -705,7 +720,7 @@ d-grid {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 .text-grad a {
@@ -805,7 +820,7 @@ d-grid {
   position: absolute;
   top: 0%;
   left: 73%;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #fff;
   background-color: #343441ff;
   border-radius: 0.8rem;
@@ -1054,7 +1069,7 @@ d-grid {
 }
 
 .footer__address p {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #fff;
 }
 
@@ -1206,6 +1221,7 @@ d-grid {
 
 body {
   background: #14141f;
+  background-image: url(./img/itemdetail/bg.png);
 }
 
 header {
@@ -1213,12 +1229,14 @@ header {
   width: 100%;
   height: 9vh;
   z-index: 9999;
-  position: relative;
+  position: absolute;
   padding: 0rem 0;
   border-bottom: 1px solid #a1a1a1;
-  background: url("./assets/img/itemdetail/bg.jpg") no-repeat;
-  background-size: auto;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+}
+
+.bg__img img {
+  top: 0;
 }
 
 .nav {
@@ -1513,7 +1531,7 @@ main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 18rem;
+  padding-top: 7rem;
 }
 
 .idhero > * {
@@ -1685,6 +1703,11 @@ main {
   padding: 1rem 0;
   margin: 2rem 0;
   color: #fff;
+}
+
+.idhero__pab:hover {
+  color: #343441ff;
+  background-color: #fff;
 }
 
 .idhero__seller {

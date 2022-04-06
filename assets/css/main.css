@@ -18,6 +18,20 @@
   font-style: normal;
 }
 
+#tick {
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  top: 35%;
+  right: -1.5rem;
+  border: 2px solid #14ce0d;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .rotate {
   -webkit-animation-name: ani-rotate;
           animation-name: ani-rotate;
@@ -528,7 +542,7 @@ button {
 }
 
 a {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-decoration: none;
   text-underline-offset: 0.5rem;
   color: #fff;
@@ -552,7 +566,7 @@ img {
 }
 
 i {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .ri-lg {
@@ -696,6 +710,7 @@ d-grid {
   display: block;
   color: #fff;
   font-weight: 800;
+  font-size: 2.7rem;
 }
 
 .text-grad {
@@ -705,7 +720,7 @@ d-grid {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 .text-grad a {
@@ -752,7 +767,7 @@ header {
 }
 
 nav {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 800;
   color: #fff;
   z-index: 999;
@@ -1215,7 +1230,7 @@ i.ri-close-line {
   position: absolute;
   top: 0%;
   left: 73%;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #fff;
   background-color: #343441ff;
   border-radius: 0.8rem;
@@ -1548,7 +1563,7 @@ i.ri-close-line {
 }
 
 .footer__address p {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #fff;
 }
 

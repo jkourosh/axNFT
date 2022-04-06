@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,500,800');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0;300;500;800&display=swap');
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./../font/Gilroy-Regular.eot');
+	src: local('Gilroy Regular'), local('Gilroy-Regular'),
+		url('./../font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+		url('./../font/Gilroy-Regular.woff2') format('woff2'),
+		url('./../font/Gilroy-Regular.woff') format('woff'),
+		url('./../font/Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy-Extrabold';
+	src: url('./../font/Gilroy-Extrabold.eot');
+	src: local('Gilroy Extrabold'), local('Gilroy-Black'),
+		url('./../font/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+		url('./../font/Gilroy-Extrabold.woff2') format('woff2'),
+		url('./../font/Gilroy-Extrabold.woff') format('woff'),
+		url('./../font/Gilroy-Extrabold.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+
 $light-color: #fff;
 $light-color-: #afafbf;
 $light-color--: #afb6cd;
@@ -97,8 +127,9 @@ $font-sizes: (
 	xxsm:.8rem,
 	xsm: 1.2rem,
 	sm: 1.4rem,
-	md: 1.6rem,
-	mdx: 2.4rem,
+	md: 1.7rem,
+	mdx: 2.2rem,
+	lg:2.7rem,
 	lgx: 3rem,
 	lgxx: 4rem,
 );
@@ -146,4 +177,15 @@ $font-weights: (
 	$quaternary-color: #f5f5f5;
 	$quinary-color: #f5f5f5;
 	$senary-color: #f5f5f5;
+}
+#tick {
+	position: absolute;
+	width: 0.7rem;
+	height: 0.7rem;
+	top: 35%;
+	right: -1.5rem;
+	border: 2px solid rgb(20, 206, 13);
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	transition: all 0.3s ease;
 }
