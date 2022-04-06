@@ -6,7 +6,7 @@ const selectElement = (selector) => {
 
 const isEmpty = (str) => !str.trim().length;
 
-const API_URl = 'http://api.github.com/users/';
+const API_URl = 'https://api.github.com/users/';
 const username = selectElement('#username');
 let submitElm = selectElement('#submit');
 let profileElm = selectElement('#profile');
