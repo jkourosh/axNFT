@@ -5,8 +5,13 @@ const selectElement = (selector) => {
 };
 
 function editKey() {
-    var allInputs = document.getElementsByTagName("input");
-    alert("kkkk");
-    allInputs[0].readOnly = false;
+    let allInputs = document.getElementsByTagName("input");
+    console.log(typeof allInputs);
+    for(var i = 0; i < allInputs.length; i++)
+    {
+        allInputs[i].disabled = false;
+    }
+    
+
     
 }
