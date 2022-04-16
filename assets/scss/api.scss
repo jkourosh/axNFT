@@ -184,9 +184,9 @@ footer {
     
 	@include flex-between(row);
 	justify-content: center;
-    padding: 0 auto;
+    padding: 0 10rem;
 	font-size: FS(md);
-	padding: 5rem;
+	
 	&__left {
         width: 50%;
         padding:0 10rem;
@@ -198,7 +198,7 @@ footer {
 			}
 			input {
                 border-radius: .5rem;
-                width: 100%;
+                width: 80%;
                 line-height: 4rem;
 				background-color: $gray-;
                 
@@ -240,7 +240,7 @@ footer {
                 &:nth-child(1){
                     width: 1rem;
                 }
-                &:nth-child(2),{ 
+                &:nth-child(2){ 
                     width: 10rem;
                 }
                

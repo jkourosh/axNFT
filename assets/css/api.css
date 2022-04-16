@@ -130,9 +130,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 auto;
+  padding: 0 10rem;
   font-size: 1.7rem;
-  padding: 5rem;
 }
 
 .hero__left {
@@ -148,7 +147,7 @@ footer {
 
 .hero__left--text input {
   border-radius: .5rem;
-  width: 100%;
+  width: 80%;
   line-height: 4rem;
   background-color: #d4d4d4;
 }
