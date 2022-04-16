@@ -61,9 +61,9 @@ const getProfile = () => {
             </div>
             `;
 				} else {
-                    notifier.alert("User Not Found");
-                    username.value = "";
-                    cardElm.innerHTML = ``;
+					notifier.alert('User Not Found');
+					username.value = '';
+					cardElm.innerHTML = ``;
 				}
 			});
 	}
