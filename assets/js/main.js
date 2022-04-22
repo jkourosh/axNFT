@@ -96,3 +96,5 @@ function openCity1(evt, cityName) {
 	document.getElementById(cityName).style.display = "block";
 	evt.currentTarget.className += " active";
   }
+ 
+ 

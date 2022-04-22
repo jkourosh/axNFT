@@ -945,7 +945,7 @@ body:before {
   left: 0;
   right: 0;
   z-index: -1;
-  background1: url(https://raw.githubusercontent.com/googitwebdev/intro/master/image/watermark.png) 0 0 repeat;
+  background: url(https://raw.githubusercontent.com/googitwebdev/intro/master/image/watermark.png) 0 0 repeat;
   background-position: center;
   opacity: 0.2;
 }
@@ -1161,4 +1161,4 @@ a.btn {
 a.btn:hover {
   background-color: #4095c6;
 }
-/*# sourceMappingURL=github.css.map */
+/*# sourceMappingURL=profile.css.map */

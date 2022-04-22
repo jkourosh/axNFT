@@ -436,6 +436,36 @@ text {
   }
 }
 
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1.2rem);
+            transform: translateY(-1.2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1.2rem);
+            transform: translateY(-1.2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.2);
@@ -1029,8 +1059,9 @@ d-grid {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1112,11 +1143,12 @@ d-grid {
 .footer__news--form input {
   background-color: #fff;
   padding: 1rem;
-  width: 100%;
+  margin-bottom: 1rem;
+  width: 92%;
   outline: none;
   height: 4rem;
   border: 0.1rem solid #7a798a;
-  border-radius: 2rem;
+  border-radius: 1rem 2rem 2rem 1rem;
   font-size: 1.5rem;
   color: #7a798a;
 }
@@ -1137,35 +1169,30 @@ d-grid {
   color: #5a6981ff;
 }
 
-.footer__news--form button {
-  position: absolute;
-  border-radius: 0.2rem;
-  right: 0.2rem;
+.footer__news--form-submit {
   z-index: 2;
-  border: none;
-  top: 1rem;
-  height: 1rem;
-  -webkit-transform: translateX(2px);
-          transform: translateX(2px);
+  position: absolute;
+  top: 2.3rem;
+  right: 0.2rem;
 }
 
 .footer__news--form i {
-  background: #7a798a;
+  background: #262165;
   position: absolute;
   color: #fff;
   top: -1.1rem;
   right: 0rem;
-  padding: 0.3rem;
+  padding: 0.5rem;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .footer__news--form i:hover {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  color: #262165;
-  -webkit-text-decoration: underline solid 2px #262165;
-          text-decoration: underline solid 2px #262165;
+  transition1: all 0.3s linear;
+  background-color: #5142fc;
+  text-decoration: none;
+  -webkit-animation: floating 3s linear 0s 1 infinite;
+          animation: floating 3s linear 0s 1 infinite;
 }
 
 .footer__social {
@@ -1173,9 +1200,10 @@ d-grid {
 }
 
 .footer__social i {
-  -webkit-box-shadow: inset 0 0 0.1rem 0.1rem #fff;
-          box-shadow: inset 0 0 0.1rem 0.1rem #fff;
-  padding: 0.5rem;
+  display: inline-block;
+  -webkit-animation: floating 5s ease-in-out infinite;
+          animation: floating 5s ease-in-out infinite;
+  padding: 0.4rem;
   border-radius: 50%;
   cursor: pointer;
   margin: 0.1rem;
@@ -1183,7 +1211,41 @@ d-grid {
 
 .footer__social i:hover {
   text-decoration: none;
-  color: #5142fc;
+  color: #fff;
+  -webkit-box-shadow: inset 0 0 0.3rem 0.1rem #fff;
+          box-shadow: inset 0 0 0.3rem 0.1rem #fff;
+}
+
+.footer__social > .ri-instagram-line {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-box-shadow: inset 0 0 0.3rem 0.1rem orangered;
+          box-shadow: inset 0 0 0.3rem 0.1rem orangered;
+  color: orangered;
+}
+
+.footer__social > .ri-dropbox-line {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  -webkit-box-shadow: inset 0 0 0.3rem 0.1rem dodgerblue;
+          box-shadow: inset 0 0 0.3rem 0.1rem dodgerblue;
+  color: dodgerblue;
+}
+
+.footer__social > .ri-whatsapp-line {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-box-shadow: inset 0 0 0.3rem 0.1rem green;
+          box-shadow: inset 0 0 0.3rem 0.1rem green;
+  color: green;
+}
+
+.footer__social > .ri-twitter-line {
+  -webkit-animation-delay: 3.25s;
+          animation-delay: 3.25s;
+  -webkit-box-shadow: inset 0 0 0.3rem 0.1rem dodgerblue;
+          box-shadow: inset 0 0 0.3rem 0.1rem dodgerblue;
+  color: dodgerblue;
 }
 
 .footer__anim i:hover {
@@ -1208,15 +1270,6 @@ d-grid {
 
 #copyright span {
   font-style: italic;
-}
-
-.submit {
-  margin-top: 0.6rem;
-}
-
-.submit:hover i {
-  background-color: #7a798a;
-  text-decoration: none;
 }
 
 body {

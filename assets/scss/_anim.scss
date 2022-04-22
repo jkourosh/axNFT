@@ -230,6 +230,18 @@ text {
 		transform: scale(1.1) rotateX(180deg);
 	}
 }
+@keyframes floating {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-1.2rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
 @keyframes scale-up-center {
 	0% {
 		transform: scale(0.2);
@@ -238,7 +250,6 @@ text {
 		transform: scale(1);
 	}
 }
-
 /* Underline From Center */
 .hvr-underline-from-center {
 	display: inline-block;
