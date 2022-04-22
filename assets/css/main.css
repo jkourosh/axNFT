@@ -1723,7 +1723,6 @@ i.ri-close-line {
 .footer__news--form-submit {
   z-index: 2;
   position: absolute;
-  top: 2.3rem;
   right: 0.2rem;
 }
 
@@ -1731,7 +1730,7 @@ i.ri-close-line {
   background: #262165;
   position: absolute;
   color: #fff;
-  top: -1.1rem;
+  top: -.1rem;
   right: 0rem;
   padding: 0.5rem;
   border-radius: 50%;
