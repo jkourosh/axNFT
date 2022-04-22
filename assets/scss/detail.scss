@@ -139,6 +139,7 @@ header {
 		@include flex-between(row);
 		justify-content: space-evenly;
 		padding: 0.5rem 2rem;
+		height: 2.7rem;
 		background-color: $light-color-;
 		border-radius: 5rem;
 		position: fixed;
@@ -158,9 +159,11 @@ header {
 		display: flex;
 		justify-content: flex-start;
 		color: $light-color;
+		margin-top: 1.8rem;
 		&-note {
 			font-size: FS(xsm);
 			text-align: right;
+			padding-top: 1rem;
 		}
 		&-btn {
 			display: inline-block;
@@ -187,12 +190,26 @@ header {
 		}
 	}
 }
-i.ri-close-line {
-	margin: auto;
-}
+
 main {
 	position: relative;
 }
+i.ri-close-line {
+	margin: auto;
+}
+.moon-icon {
+	display: none;
+}
+.light-theme {
+	.sun-icon {
+		display: none;
+	}
+	.moon-icon {
+		display: block;
+	}
+}
+
+
 .idhero {
 	
 	background-color: $dark-color---;
@@ -395,16 +412,5 @@ main {
 }
 .card__wrapper {
 	position: relative;
-}
-.moon-icon {
-	display: none;
-}
-.light-theme {
-	.sun-icon {
-		display: none;
-	}
-	.moon-icon {
-		display: block;
-	}
 }
 

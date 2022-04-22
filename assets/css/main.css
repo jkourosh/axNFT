@@ -288,6 +288,60 @@ text {
   }
 }
 
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  20% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  80% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  20% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  80% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @-webkit-keyframes shake-vertical {
   0% {
     -webkit-transform: translateY(0);
@@ -945,6 +999,7 @@ nav {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 0.5rem 2rem;
+  height: 2.7rem;
   background-color: #e1e1e1;
   border-radius: 5rem;
   position: fixed;
@@ -972,11 +1027,13 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
+  margin-top: -.3rem;
 }
 
 .nav__form-note {
   font-size: 1.2rem;
   text-align: right;
+  padding-top: 1rem;
 }
 
 .nav__form-btn {

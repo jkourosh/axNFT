@@ -121,7 +121,7 @@ nav {
 		@include flex-between(row);
 		justify-content: space-evenly;
 		padding: 0.5rem 2rem;
-		
+		height: 2.7rem;
 		background-color: $light-color-;
 		border-radius: 5rem;
 		position: fixed;
@@ -142,9 +142,11 @@ nav {
 		display: flex;
 		justify-content: center;
 		color: $light-color;
+		margin-top: -.3rem;
 		&-note {
 			font-size: FS(xsm);
 			text-align: right;
+			padding-top: 1rem;
 		}
 		&-btn {
 			display: inline-block;

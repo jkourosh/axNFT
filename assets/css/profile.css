@@ -288,6 +288,60 @@ text {
   }
 }
 
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  20% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  80% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  20% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  80% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @-webkit-keyframes shake-vertical {
   0% {
     -webkit-transform: translateY(0);
@@ -1294,7 +1348,6 @@ header {
 
 .nav {
   position: relative;
-  top: 0;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1312,6 +1365,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1rem;
 }
 
 .nav__wrapper a {
@@ -1332,6 +1386,64 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav__right > * {
+  margin: 0 0.5rem;
+}
+
+.nav__right img {
+  width: 4rem;
+  border-radius: 1rem;
+}
+
+.nav__right--notif {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav__right--notif:hover {
+  -webkit-animation: shake 1s ease-in-out;
+          animation: shake 1s ease-in-out;
+}
+
+.nav__right--notif::after {
+  content: attr(data-badge);
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  top: -0.8rem;
+  right: -.3rem;
+  font-size: 0.8rem;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.3rem;
+  font-weight: bold;
+  opacity: 1;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.nav__right--notif:hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity .25s, -webkit-transform .25s;
+  transition: opacity .25s, -webkit-transform .25s;
+  transition: opacity .25s, transform .25s;
+  transition: opacity .25s, transform .25s, -webkit-transform .25s;
+}
+
+.nav__right--notif-num {
+  font-size: 1.4rem;
+  background-color: red;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
 .nav__menu {
@@ -1433,11 +1545,6 @@ header {
   color: #fff;
 }
 
-.nav__wallet {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .nav__dropdown {
   position: relative;
   display: inline-block;
@@ -1494,17 +1601,18 @@ header {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 0.5rem 2rem;
+  height: 2.7rem;
   background-color: #e1e1e1;
   border-radius: 5rem;
   position: fixed;
-  top: 6.3rem;
+  top: 6rem;
   z-index: 999;
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  left: 57%;
+  left: 65%;
 }
 
 .nav__search-form-container.activated {
@@ -1521,11 +1629,13 @@ header {
       -ms-flex-pack: start;
           justify-content: flex-start;
   color: #fff;
+  margin-top: 2rem;
 }
 
 .nav__form-note {
   font-size: 1.2rem;
   text-align: right;
+  padding-top: 1rem;
 }
 
 .nav__form-btn {
@@ -1557,11 +1667,28 @@ header {
           flex-direction: column;
 }
 
-i.ri-close-line {
-  margin: auto;
+.nav__sun i:hover {
+  -webkit-animation: bounce-in 3s linear 0s 1 infinite;
+          animation: bounce-in 3s linear 0s 1 infinite;
 }
 
 main {
   position: relative;
+}
+
+i.ri-close-line {
+  margin: auto;
+}
+
+.moon-icon {
+  display: none;
+}
+
+.light-theme .sun-icon {
+  display: none;
+}
+
+.light-theme .moon-icon {
+  display: block;
 }
 /*# sourceMappingURL=profile.css.map */
