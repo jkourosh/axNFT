@@ -1859,4 +1859,14 @@ i.ri-close-line {
 .footer__news--form i {
   top: .9rem;
 }
+
+textarea {
+  resize: none;
+  background-color: #14141f;
+  border: 1px solid #343441ff;
+  width: 38rem;
+  border-radius: 0.7rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
 /*# sourceMappingURL=profile.css.map */

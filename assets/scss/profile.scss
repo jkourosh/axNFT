@@ -368,3 +368,13 @@ i.ri-close-line {
 .footer__news--form i{
 	top: .9rem;
 }
+textarea {
+	resize: none;
+	background-color: $dark-color---;
+	border: 1px solid $dark-color-;
+	width: 38rem;
+	
+	border-radius: 0.7rem;
+	margin: 1rem 0;
+	padding: 0 1rem;
+  }
