@@ -265,7 +265,7 @@ main {
 input {
 	border: 1px solid $dark-color-;
 	width: 38rem;
-	line-height: 3rem;
+	line-height: 3.2rem;
 	border-radius: 0.7rem;
 	margin: 1rem 0;
 	padding: 0 1rem;
@@ -328,7 +328,8 @@ i.ri-close-line {
 		&--coverimage {
 			@include flex-between(row);
 			margin: 2rem auto;
-
+			// border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+			// animation: br-rotate 2.5s ease-in infinite;
 			& img {
 				width: 32%;
 				height: 10rem;

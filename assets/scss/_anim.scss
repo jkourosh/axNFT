@@ -61,6 +61,14 @@
 	animation: bgAnim 2s ease infinite;
 }
 
+@keyframes br-rotate {
+	50% {
+		border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+		
+	}
+	
+}
+
 @keyframes ani-rotate {
 	0% {
 		transform: rotate(0);

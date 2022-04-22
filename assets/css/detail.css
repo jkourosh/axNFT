@@ -114,6 +114,21 @@
   animation: bgAnim 2s ease infinite;
 }
 
+@-webkit-keyframes br-rotate {
+  50% {
+    border-image: -webkit-gradient(linear, left bottom, left top, from(#ff512f), color-stop(#dd2476), to(#1c64ff)) 1;
+    border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+  }
+}
+
+@keyframes br-rotate {
+  50% {
+    -o-border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+       border-image: -webkit-gradient(linear, left bottom, left top, from(#ff512f), color-stop(#dd2476), to(#1c64ff)) 1;
+       border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+  }
+}
+
 @-webkit-keyframes ani-rotate {
   0% {
     -webkit-transform: rotate(0);
