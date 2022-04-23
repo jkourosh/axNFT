@@ -114,18 +114,25 @@
   animation: bgAnim 2s ease infinite;
 }
 
-@-webkit-keyframes br-rotate {
+@-webkit-keyframes frame-rotate {
   50% {
-    border-image: -webkit-gradient(linear, left bottom, left top, from(#ff512f), color-stop(#dd2476), to(#1c64ff)) 1;
-    border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+    border: double 4px transparent;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), radial-gradient(360deg, circle at top left, #ff512f, #dd2476, #1c64ff);
+    background-image: linear-gradient(white, white), radial-gradient(360deg, circle at top left, #ff512f, #dd2476, #1c64ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
   }
 }
 
-@keyframes br-rotate {
+@keyframes frame-rotate {
   50% {
-    -o-border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
-       border-image: -webkit-gradient(linear, left bottom, left top, from(#ff512f), color-stop(#dd2476), to(#1c64ff)) 1;
-       border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+    border: double 4px transparent;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), radial-gradient(360deg, circle at top left, #ff512f, #dd2476, #1c64ff);
+    background-image: linear-gradient(white, white), radial-gradient(360deg, circle at top left, #ff512f, #dd2476, #1c64ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
   }
 }
 
@@ -1644,13 +1651,19 @@ header {
       -ms-flex-pack: start;
           justify-content: flex-start;
   color: #fff;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+.nav__form-input {
+  width: 20rem;
+  border: none;
+  margin: 0;
 }
 
 .nav__form-note {
   font-size: 1.2rem;
   text-align: right;
-  padding-top: 1rem;
+  padding-top: -4rem;
 }
 
 .nav__form-btn {
@@ -1683,7 +1696,7 @@ header {
 }
 
 .nav__form i {
-  top: -.1rem;
+  top: -0.1rem;
 }
 
 .nav__sun i:hover {
@@ -1817,8 +1830,12 @@ i.ri-close-line {
 .prhero__right--coverimage img {
   width: 32%;
   height: 10rem;
-  border: 3px solid #5142fc;
-  border-radius: 1rem;
+  border: double 3px transparent;
+  border-radius: 1.2rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), radial-gradient(circle at top left, #ff512f, #dd2476, #1c64ff);
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff512f, #dd2476, #1c64ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .prhero__right--coverimage-upbutton {
@@ -1853,11 +1870,24 @@ i.ri-close-line {
 }
 
 .prhero__right--social button i {
+  line-height: 1rem;
   padding-right: 1rem;
 }
 
+.prhero__right--social button::before {
+  content: '';
+}
+
+.prhero__right--profile {
+  text-align: center;
+}
+
 .footer__news--form i {
-  top: .9rem;
+  top: 0.9rem;
+}
+
+.nav__search-form-container {
+  top: 7rem;
 }
 
 textarea {

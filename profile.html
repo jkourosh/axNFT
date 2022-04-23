@@ -5,6 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon.png" />
+		<!-- <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+        <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" /> -->
 		<link rel="stylesheet" href="./assets/css/remixicon.css" />
 		<link rel="stylesheet" href="./assets/css/profile.css" />
 		<title>Item Details</title>
@@ -76,7 +78,7 @@
 						<div class="nav__dropdown">
 							<button class="nav__link" href="#">Contact</button>
 							<span class="nav__arrow"></span>
-							<!-- <i class="ri-arrow-down-s-line ri-lg"></i> -->
+							<i class="ri-arrow-down-s-line ri-lg"></i>
 							<div class="nav__dropdown-content">
 								<a href="#">Link 1</a>
 								<a href="#">Link 2</a>
@@ -136,15 +138,20 @@
 						<button class="btn btn-secondary">Delete</button>
 					</div>
 					<div class="prhero__right">
+
+						
 						<h2>Choice Your Image Cover</h2>
 						<div class="prhero__right--coverimage">
 							<div class="prhero__right--coverimage-upbutton">
 								<button class="btn btn-secondary">Upload File</button>
 							</div>
-
+							<!-- <form action="/file-upload"
+							class="dropzone"
+							id="my-awesome-dropzone"></form>
+							<input type="file" name="file" /> -->
 							<img src="./assets/img/profile/option1_bg_profile.jpg" alt="profle" />
 
-							<img src="./assets/img/profile/option2_bg_profile.jpg" alt="profile" />
+							<img src="./assets/img/profile/option2_bg_profile.jpg"  alt="profile" />
 						</div>
 						<div class="prhero__right--form">
 							<div class="prhero__right--account">
@@ -166,8 +173,10 @@
 									<textarea id="bio" name="story" rows="5" placeholder="Bio"></textarea
 								>
 								</div>
-								
-								<button class="btn btn-secondary">Upload Profile</button>
+								<div class="phhero__right--profile">
+
+									<button class="btn btn-secondary">Upload Profile</button>
+								</div>
 							</div>
 							<div class="prhero__right--social">
 								<h1>Your Social Media</h1>
@@ -176,7 +185,8 @@
 									<input type="text" id="name" placeholder="Facebook username" />
 								</div>
 								<button class="btn btn-primary">
-									<i class="ri-facebook-line ri-1x"></i>Connect To Facebook
+									<i class="ri-facebook-line ri-1x"></i>
+									Connect To Facebook
 								</button>
 								<div class="prhero__right--account-row">
 									<label for="url">Twitter</label>
@@ -249,8 +259,11 @@
 		<script>
 			// Get the element with id="defaultOpen" and click on it
 			document.getElementById('defaultOpen').click();
+			Dropzone.discover();
 		</script>
 
-		<script src="./assets/js/main.js"></script>
+		<script src="./assets/js/main.js">
+
+		</script>
 	</body>
 </html>

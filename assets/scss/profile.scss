@@ -221,11 +221,16 @@ header {
 		display: flex;
 		justify-content: flex-start;
 		color: $light-color;
-		margin-top: 2rem;
+		margin-top: 1.5rem;
+		&-input{
+			width: 20rem;
+			border: none;
+			margin: 0;
+		}
 		&-note {
 			font-size: FS(xsm);
 			text-align: right;
-			padding-top: 1rem;
+			padding-top: -4rem;
 		}
 		&-btn {
 			display: inline-block;
@@ -250,8 +255,8 @@ header {
 			display: flex;
 			flex-direction: column;
 		}
-		& i{
-          top: -.1rem;
+		& i {
+			top: -0.1rem;
 		}
 	}
 	&__sun i:hover {
@@ -308,6 +313,7 @@ i.ri-close-line {
 .prhero {
 	@include flex-between(row);
 	padding: 5rem 0;
+	
 	&__left {
 		@include flex-between(column);
 		width: 25%;
@@ -333,8 +339,13 @@ i.ri-close-line {
 			& img {
 				width: 32%;
 				height: 10rem;
-				border: 3px solid $secondary-color;
-				border-radius: 1rem;
+				border: double 3px transparent;
+				border-radius: 1.2rem;
+				background-image: linear-gradient(white, white),
+					radial-gradient(circle at top left, #ff512f, #dd2476, #1c64ff);
+				background-origin: border-box;
+				background-clip: content-box, border-box;
+				//border: 3px solid $secondary-color;
 			}
 			&-upbutton {
 				width: 32%;
@@ -348,33 +359,39 @@ i.ri-close-line {
 		&--form {
 			@include flex-between(row);
 			padding: 1rem 0;
-			
 		}
 		&--social {
-		
-
 			& button {
-				line-height:1.5rem;
+				line-height: 1.5rem;
 				font-size: FS(xsm);
 				& i {
-					
+					line-height: 1rem;
 					padding-right: 1rem;
-					
+				}
+				&::before {
+					content: '';
 				}
 			}
 		}
+		&--profile {
+			text-align: center;
+		}
 	}
 }
-.footer__news--form i{
-	top: .9rem;
+.footer__news--form i {
+	top: 0.9rem;
+}
+.nav__search-form-container {
+	top: 7rem;
 }
 textarea {
 	resize: none;
 	background-color: $dark-color---;
 	border: 1px solid $dark-color-;
 	width: 38rem;
-	
+
 	border-radius: 0.7rem;
 	margin: 1rem 0;
 	padding: 0 1rem;
-  }
+}
+
