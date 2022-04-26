@@ -1,9 +1,8 @@
 .hero {
-	top: 5rem;
-	height: 55rem;
-	position: relative;
-
 	&__wrapper {
+		top: 5rem;
+		height: 55rem;
+		position: relative;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -131,7 +130,6 @@
 .hero__sell {
 	width: 50rem;
 }
-
 
 .self {
 	color: #14141f;

@@ -1106,13 +1106,10 @@ i.ri-close-line {
   margin: auto;
 }
 
-.hero {
+.hero__wrapper {
   top: 5rem;
   height: 55rem;
   position: relative;
-}
-
-.hero__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

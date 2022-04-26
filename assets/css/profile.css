@@ -1717,6 +1717,11 @@ input {
   padding: 0 1rem;
 }
 
+input:focus {
+  -webkit-box-shadow: 0 0 0 2px #a977c6ff;
+          box-shadow: 0 0 0 2px #a977c6ff;
+}
+
 label {
   display: block;
   margin-top: 1rem;
