@@ -4,7 +4,7 @@ header {
 	border-bottom: 1px solid $dark-color;
 	z-index: 9999;
 	position: fixed;
-	padding: 1rem 0;
+	padding: 1.2rem 0;
 	
 	background: $dark-bg-gradient-color;
 	font-family: $font-family-gilroy;
@@ -14,9 +14,10 @@ nav {
 	font-weight: FW(bold);
 	color: $light-color;
 	z-index: 999;
-	justify-content: space-around;
+
 }
 .nav {
+	justify-content: space-between;
 	&__logo {
 		& img {
 			display: inline-block;
@@ -49,6 +50,10 @@ nav {
 	}
 	&__link {
 		margin-right: -0.3rem;
+		&:hover {
+			color: $primary-color-;
+		}
+
 	}
 
 	&__icon {
@@ -90,6 +95,7 @@ nav {
 			min-width: 160px;
 			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 			z-index: 1;
+			margin-top: .1rem;
 
 			/* Links inside the dropdown */
 			& a {
@@ -112,22 +118,24 @@ nav {
 
 		&:hover &-content {
 			display: block;
+			transition: all .3s ease-in;
 		}
 	}
 	&__wallet {
 		margin: 0;
+		font-size: FS(sm);
 	}
 	&__search-form-container {
 		@include flex-between(row);
+		position: fixed;
+		top: 6.9rem;
+		left: 57%;
 		justify-content: space-evenly;
 		padding: 0.5rem 2rem;
 		height: 2.7rem;
 		background-color: $light-color-;
 		border-radius: 5rem;
-		position: fixed;
-	
-		top: 6.3rem;
-		left: 57%;
+		
 		z-index: 999;
 		opacity: 0;
 		transform: scale(0);

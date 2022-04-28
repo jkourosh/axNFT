@@ -222,7 +222,7 @@ header {
 		justify-content: flex-start;
 		color: $light-color;
 		margin-top: 1.5rem;
-		&-input{
+		&-input {
 			width: 20rem;
 			border: none;
 			margin: 0;
@@ -315,8 +315,9 @@ i.ri-close-line {
 
 .prhero {
 	@include flex-between(row);
+	align-items: flex-start;
 	padding: 5rem 0;
-	
+
 	&__left {
 		@include flex-between(column);
 		width: 25%;
@@ -361,6 +362,7 @@ i.ri-close-line {
 		}
 		&--form {
 			@include flex-between(row);
+			align-items: flex-start;
 			padding: 1rem 0;
 		}
 		&--social {
@@ -392,9 +394,13 @@ textarea {
 	background-color: $dark-color---;
 	border: 1px solid $dark-color-;
 	width: 38rem;
-
+	color: $light-color;
 	border-radius: 0.7rem;
 	margin: 1rem 0;
 	padding: 0 1rem;
+	&:focus {
+		
+		box-shadow: 0 0 0 3px $primary-color;
+		border: none;
+	}
 }
-

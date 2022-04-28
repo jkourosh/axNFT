@@ -1,10 +1,18 @@
 .create {
 	&__row {
+		@include flex-between(row);
 		justify-content: flex-start;
+		align-items: flex-start;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 25rem;
 	}
 	&__box {
 		transition: all 1s ease-in-out;
 		-webkit-transition: all 1s ease-in-out;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 25rem;
 		& p {
 			font-size: FS(sm);
 		}
@@ -46,8 +54,6 @@
 }
 
 .footer {
-	
-	background-color: $dark-color-;
 	padding: 0rem 10rem;
 	position: relative;
 	& a {
@@ -61,7 +67,7 @@
 		text-decoration: none;
 	}
 	&__wrapper {
-		padding:2rem 2rem;
+		padding: 2rem 0rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -94,7 +100,7 @@
 		}
 
 		& p {
-			font-size: FS(md);	
+			font-size: FS(md);
 			color: $light-color;
 		}
 	}
@@ -138,32 +144,20 @@
 				}
 			}
 			& button {
-				// position: absolute;
-				// border-radius: 0.2rem;
-				// right: 0.2rem;
-				// z-index: 2;
-				// border: none;
-				// top: 1.2rem;
-				// height: 1rem;
-				
-				// &:hover{
-				// 	background-color: chocolate;
-				// }
 			}
 			&-submit {
 				//margin-top: 0.6rem;
 				z-index: 2;
 				position: absolute;
-				
+
 				right: 0.2rem;
 			}
-			
 
 			& i {
 				background: $secondary-color-;
 				position: absolute;
 				color: $light-color;
-				top: -.1rem;
+				top: -0.1rem;
 				right: 0rem;
 
 				padding: 0.5rem;
@@ -171,9 +165,8 @@
 				cursor: pointer;
 
 				&:hover {
-					
 					background-color: $secondary-color;
-					text-decoration:none;
+					text-decoration: none;
 					animation: floating 3s linear 0s 1 infinite;
 				}
 			}
@@ -189,60 +182,50 @@
 			cursor: pointer;
 			margin: 0.1rem;
 			&:hover {
-				text-decoration: none;			
+				text-decoration: none;
 				color: $light-color;
 				box-shadow: inset 0 0 0.3rem 0.1rem $light-color;
 			}
-		} 
-		& >.ri-instagram-line {
+		}
+		& > .ri-instagram-line {
 			animation-delay: 1s;
 			box-shadow: inset 0 0 0.3rem 0.1rem orangered;
 			color: orangered;
 		}
-		
-		& >.ri-dropbox-line {
+
+		& > .ri-dropbox-line {
 			animation-delay: 1.75s;
 			box-shadow: inset 0 0 0.3rem 0.1rem dodgerblue;
 			color: dodgerblue;
 		}
-		& >.ri-whatsapp-line {
+		& > .ri-whatsapp-line {
 			animation-delay: 2.5s;
 			box-shadow: inset 0 0 0.3rem 0.1rem green;
 			color: green;
 		}
-		& >.ri-twitter-line {
+		& > .ri-twitter-line {
 			animation-delay: 3.25s;
 			box-shadow: inset 0 0 0.3rem 0.1rem dodgerblue;
 			color: dodgerblue;
 		}
-		
-		
-		
-
 	}
-	&__scroll-top{
+	&__scroll-top {
 		position: fixed;
 		bottom: 1rem;
 		right: 1rem;
 		z-index: 2;
 		cursor: pointer;
-		&:hover{
-			
+		&:hover {
 			color: $secondary-color;
 		}
 	}
-	
+
 	&__anim i {
 		&:hover {
 			color: $dark-bg-gradient-color;
 			animation: shake-vertical 1s ease 0s 1 normal none;
 		}
 	}
-
-	// &__anim{
-	// 	&:hover
-	// 	animation: shake-vertical 1s ease 0s 1 normal none;
-	// }
 }
 #copyright {
 	width: fit-content;
@@ -258,4 +241,23 @@
 		font-style: italic;
 	}
 }
+.footer-shape-divider {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
 
+	& svg {
+		position: relative;
+		display: block;
+		width: calc(188% + 1.3px);
+		height: 300px;
+		transform: rotateY(180deg);
+	}
+	.shape-fill {
+		fill: #3a28aa;
+		fill: #0f0a23;
+	}
+}

@@ -251,6 +251,7 @@ i.ri-close-line {
 			padding: 0.5rem 1rem;
 			border-radius: 100px/100px;
 			margin: 0rem 1rem;
+			font-size: FS(xsm);
 			& i {
 				padding: 0.5rem;
 			}
@@ -273,7 +274,7 @@ i.ri-close-line {
 		}
 		&-box {
 			justify-content: flex-start;
-			font-size: FS(xsm);
+			font-size: FS(sm);
 			background-color: $dark-color-;
 			padding: 0.7rem 1rem;
 			border-radius: 1rem;
@@ -294,14 +295,15 @@ i.ri-close-line {
 				padding: 0;
 
 				& h3 {
-					font-size: 0.9rem; // FS(xxsm);
+					font-size: FS(xsm);
 					color: $dark-color;
+					padding-bottom: 1rem;
 				}
 			}
 		}
 	}
 	&__cc {
-		font-size: FS(xsm);
+		font-size: FS(sm);
 		padding: 1rem 1rem;
 		&:first-child {
 			margin-right: 1rem;
@@ -320,9 +322,11 @@ i.ri-close-line {
 		padding: 1rem 0;
 		margin: 2rem 0;
 		color: $light-color;
+		font-size: FS(sm);
 		&:hover{
 			color:$dark-color-;
 			background-color: $light-color;
+			transform: scale(1.02);
 		}
 	}
 
@@ -414,6 +418,10 @@ i.ri-close-line {
 	position: relative;
 }
 .footer{
-	background-color: $dark-color-;
+	
 	padding: 0 10rem;
+}
+
+.footer-shape-divider .shape-fill {
+fill:#1e0e32;
 }

@@ -926,7 +926,7 @@ d-grid {
   position: absolute;
   top: 0%;
   left: 73%;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   color: #fff;
   background-color: #343441ff;
   border-radius: 0.8rem;
@@ -958,13 +958,19 @@ d-grid {
   color: #fff;
   background-color: #14141f;
   border-radius: 0.8rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 0;
+}
+
+.card__time h3 {
+  padding: 0;
 }
 
 .card__time img {
-  width: 14%;
+  width: 12%;
+  margin: 0 1rem;
 }
 
 .card__pbid {
@@ -1061,14 +1067,44 @@ d-grid {
 }
 
 .create__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
 }
 
 .create__box {
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
 }
 
 .create__box p {
@@ -1119,7 +1155,6 @@ d-grid {
 }
 
 .footer {
-  background-color: #343441ff;
   padding: 0rem 10rem;
   position: relative;
 }
@@ -1138,7 +1173,7 @@ d-grid {
 }
 
 .footer__wrapper {
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1266,7 +1301,7 @@ d-grid {
   background: #262165;
   position: absolute;
   color: #fff;
-  top: -.1rem;
+  top: -0.1rem;
   right: 0rem;
   padding: 0.5rem;
   border-radius: 50%;
@@ -1367,6 +1402,29 @@ d-grid {
 
 #copyright span {
   font-style: italic;
+}
+
+.footer-shape-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.footer-shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(188% + 1.3px);
+  height: 300px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.footer-shape-divider .shape-fill {
+  fill: #3a28aa;
+  fill: #0f0a23;
 }
 
 body {
@@ -1765,6 +1823,7 @@ i.ri-close-line {
   padding: 0.5rem 1rem;
   border-radius: 100px/100px;
   margin: 0rem 1rem;
+  font-size: 1.2rem;
 }
 
 .idhero__like-box i {
@@ -1815,7 +1874,7 @@ i.ri-close-line {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background-color: #343441ff;
   padding: 0.7rem 1rem;
   border-radius: 1rem;
@@ -1840,12 +1899,13 @@ i.ri-close-line {
 }
 
 .idhero__bott-box-name h3 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #7a798a;
+  padding-bottom: 1rem;
 }
 
 .idhero__cc {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 1rem 1rem;
 }
 
@@ -1868,11 +1928,14 @@ i.ri-close-line {
   padding: 1rem 0;
   margin: 2rem 0;
   color: #fff;
+  font-size: 1.4rem;
 }
 
 .idhero__pab:hover {
   color: #343441ff;
   background-color: #fff;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .idhero__seller {
@@ -1990,7 +2053,10 @@ i.ri-close-line {
 }
 
 .footer {
-  background-color: #343441ff;
   padding: 0 10rem;
+}
+
+.footer-shape-divider .shape-fill {
+  fill: #1e0e32;
 }
 /*# sourceMappingURL=detail.css.map */

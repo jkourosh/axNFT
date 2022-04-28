@@ -866,7 +866,7 @@ header {
   border-bottom: 1px solid #7a798a;
   z-index: 9999;
   position: fixed;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   background: radial-gradient(circle at 32% 51%, #14141f 0%, #1e1735 22%, #0e0822 100%);
   font-family: "Gilroy", sans-serif;
 }
@@ -876,8 +876,12 @@ nav {
   font-weight: 800;
   color: #fff;
   z-index: 999;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+
+.nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__logo img {
@@ -916,6 +920,10 @@ nav {
 
 .nav__link {
   margin-right: -0.3rem;
+}
+
+.nav__link:hover {
+  color: #a448cd;
 }
 
 .nav__icon {
@@ -974,6 +982,7 @@ nav {
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: .1rem;
   /* Links inside the dropdown */
   /* Change color of dropdown links on hover */
 }
@@ -996,10 +1005,13 @@ nav {
 
 .nav__dropdown:hover .nav__dropdown-content {
   display: block;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .nav__wallet {
   margin: 0;
+  font-size: 1.4rem;
 }
 
 .nav__search-form-container {
@@ -1016,6 +1028,9 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  top: 6.9rem;
+  left: 57%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -1023,9 +1038,6 @@ nav {
   height: 2.7rem;
   background-color: #e1e1e1;
   border-radius: 5rem;
-  position: fixed;
-  top: 6.3rem;
-  left: 57%;
   z-index: 999;
   opacity: 0;
   -webkit-transform: scale(0);
@@ -1335,7 +1347,7 @@ i.ri-close-line {
   position: absolute;
   top: 0%;
   left: 73%;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   color: #fff;
   background-color: #343441ff;
   border-radius: 0.8rem;
@@ -1367,13 +1379,19 @@ i.ri-close-line {
   color: #fff;
   background-color: #14141f;
   border-radius: 0.8rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 0;
+}
+
+.card__time h3 {
+  padding: 0;
 }
 
 .card__time img {
-  width: 14%;
+  width: 12%;
+  margin: 0 1rem;
 }
 
 .card__pbid {
@@ -1559,14 +1577,44 @@ i.ri-close-line {
 }
 
 .create__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
 }
 
 .create__box {
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
 }
 
 .create__box p {
@@ -1617,7 +1665,6 @@ i.ri-close-line {
 }
 
 .footer {
-  background-color: #343441ff;
   padding: 0rem 10rem;
   position: relative;
 }
@@ -1636,7 +1683,7 @@ i.ri-close-line {
 }
 
 .footer__wrapper {
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1764,7 +1811,7 @@ i.ri-close-line {
   background: #262165;
   position: absolute;
   color: #fff;
-  top: -.1rem;
+  top: -0.1rem;
   right: 0rem;
   padding: 0.5rem;
   border-radius: 50%;
@@ -1865,5 +1912,28 @@ i.ri-close-line {
 
 #copyright span {
   font-style: italic;
+}
+
+.footer-shape-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.footer-shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(188% + 1.3px);
+  height: 300px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.footer-shape-divider .shape-fill {
+  fill: #3a28aa;
+  fill: #0f0a23;
 }
 /*# sourceMappingURL=main.css.map */

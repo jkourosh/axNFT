@@ -6,16 +6,34 @@ const selectElement = (selector) => {
 };
 
 
+//------------Search -------------------------
+const formOpenBtn = selectElement('#search-icon');
+const formCloseBtn = selectElement('#form-close-btn');
+const searchformcontainer = selectElement('#search-section');
+//formOpenBtn.addEventListener('click', () => searchformcontainer.classList.add('activated'));
+formOpenBtn.addEventListener('click', () => searchformcontainer.classList.toggle('activated'));
+formCloseBtn.addEventListener('click', () => searchformcontainer.classList.remove('activated'));
+
+// -- Close the search form popup on ESC keypress
+window.addEventListener('keyup', (e) => {
+	if (e.key === 'Escape') searchformcontainer.classList.remove('activated');
+});
+
+//------------------------Scroll to top-----------
 var rootElement = document.documentElement;
 const scrollBtn = selectElement('#scroll-top');
+const btnVisibility = () => {
+    if (window.scrollY > 450) {
+        scrollBtn.style.visibility = "visible";
+    } else {
+        scrollBtn.style.visibility = "hidden";
+    }
+};
 
+document.addEventListener("scroll", () => {
+    btnVisibility();
+});
 
-	// const headerElement = selectElement('#header-section');
-	// if (this.scrollY >= 15) {
-	// 	headerElement.classList.add('activated');
-	// } else {
-	// 	headerElement.classList.remove('activated');
-	// }
 
 scrollBtn.addEventListener("click", () => {
 	rootElement.scrollTo({
@@ -25,11 +43,12 @@ scrollBtn.addEventListener("click", () => {
 });
 
 
-// function switchTheme(el) {
-// 	document.querySelector('html').className = 'theme-' + el.className;
-//   }
 
-// Switch theme/add to local storage
+
+
+
+
+//------------Switch theme/add to local storage -
 const bodyElement = document.body;
 const themeToggleBtn = selectElement('#theme-toggle-btn');
 const currentTheme = localStorage.getItem('currentTheme');
@@ -44,21 +63,6 @@ themeToggleBtn.addEventListener('click', () => {
 		localStorage.removeItem('currentTheme');
 	}
 });
-
-
-
-const formOpenBtn = selectElement('#search-icon');
-const formCloseBtn = selectElement('#form-close-btn');
-const searchformcontainer = selectElement('#search-section');
-//formOpenBtn.addEventListener('click', () => searchformcontainer.classList.add('activated'));
-formOpenBtn.addEventListener('click', () => searchformcontainer.classList.toggle('activated'));
-formCloseBtn.addEventListener('click', () => searchformcontainer.classList.remove('activated'));
-
-// -- Close the search form popup on ESC keypress
-window.addEventListener('keyup', (e) => {
-	if (e.key === 'Escape') searchformcontainer.classList.remove('activated');
-});
-
 
 
 function openCity(evt, tabName) {
