@@ -4,8 +4,8 @@ header {
 	border-bottom: 1px solid $dark-color;
 	z-index: 9999;
 	position: fixed;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	padding: 1rem 0;
+	
 	background: $dark-bg-gradient-color;
 	font-family: $font-family-gilroy;
 }

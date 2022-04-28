@@ -866,8 +866,7 @@ header {
   border-bottom: 1px solid #7a798a;
   z-index: 9999;
   position: fixed;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 1rem 0;
   background: radial-gradient(circle at 32% 51%, #14141f 0%, #1e1735 22%, #0e0822 100%);
   font-family: "Gilroy", sans-serif;
 }
