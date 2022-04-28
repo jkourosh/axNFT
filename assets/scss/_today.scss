@@ -1,11 +1,14 @@
 .today__btnlist {
 	justify-content: space-between;
 	padding: 2rem 0;
+	
 }
-
+.btn-today{
+   font-size: FS(sm);
+}
 .todaybid__btn {
 	padding: 1rem 1.5rem;
-
+font-size: FS(sm);
 	margin: 0;
 
 	& i {

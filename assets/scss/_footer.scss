@@ -46,7 +46,9 @@
 }
 
 .footer {
-	padding-top: 2rem;
+	
+	background-color: $dark-color-;
+	padding: 0rem 10rem;
 	position: relative;
 	& a {
 		color: $light-color;
@@ -59,7 +61,7 @@
 		text-decoration: none;
 	}
 	&__wrapper {
-		padding: 6rem 2rem;
+		padding:2rem 2rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -169,7 +171,7 @@
 				cursor: pointer;
 
 				&:hover {
-					transition1: all 0.3s linear;
+					
 					background-color: $secondary-color;
 					text-decoration:none;
 					animation: floating 3s linear 0s 1 infinite;
@@ -215,8 +217,21 @@
 		}
 		
 		
+		
 
 	}
+	&__scroll-top{
+		position: fixed;
+		bottom: 1rem;
+		right: 1rem;
+		z-index: 2;
+		cursor: pointer;
+		&:hover{
+			
+			color: $secondary-color;
+		}
+	}
+	
 	&__anim i {
 		&:hover {
 			color: $dark-bg-gradient-color;
@@ -243,3 +258,4 @@
 		font-style: italic;
 	}
 }
+

@@ -30,8 +30,9 @@
 	cursor: pointer;
 	overflow: hidden;
 	& h2 {
-		font-size: FS(xsm);
+		font-size: FS(sm);
 		display: inline-block;
+	
 	}
 	& > img {
 		padding: 1rem;
@@ -117,6 +118,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-bottom: 1rem;
 }
 
 .card__bsc {
@@ -124,7 +126,7 @@
 	padding: 0.3rem 1rem;
 	background-color: $secondary-color;
 	border-radius: 100px/100px;
-	font-size: FS(sm);
+	font-size: FS(xxsm);
 }
 
 .card__creator--img {
@@ -134,4 +136,13 @@
 .card__dark {
 	color: $dark-color;
 	font-family: $font-family-gilroy;
+	font-size: FS(sm);
+	
+}
+.card__name{
+	font-size: FS(xsm);
+	
+}
+.create__row{
+  padding: 2rem 0;
 }

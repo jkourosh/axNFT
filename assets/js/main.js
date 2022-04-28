@@ -5,17 +5,24 @@ const selectElement = (selector) => {
 	throw new Error(`Error Selector: ${selector}`);
 };
 
-// const scrollHeader = () => {
-// 	const headerElement = selectElement('#header');
-// 	if (this.scrollY >= 15) {
-// 		headerElement.classList.add('activated');
-// 	} else {
-// 		headerElement.classList.remove('activated');
-// 	}
-// };
 
-//Nav styles on scroll
-window.addEventListener('scroll', scrollHeader);
+var rootElement = document.documentElement;
+const scrollBtn = selectElement('#scroll-top');
+
+
+	// const headerElement = selectElement('#header-section');
+	// if (this.scrollY >= 15) {
+	// 	headerElement.classList.add('activated');
+	// } else {
+	// 	headerElement.classList.remove('activated');
+	// }
+
+scrollBtn.addEventListener("click", () => {
+	rootElement.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+});
 
 
 // function switchTheme(el) {
