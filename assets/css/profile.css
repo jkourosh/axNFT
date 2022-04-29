@@ -945,14 +945,25 @@ d-grid {
 }
 
 .card__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 23rem;
   left: 30%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  /* display: flex;
-	align-items: center; */
   padding: 0.3rem 0;
   font-size: 1.2rem;
   color: #fff;
@@ -964,7 +975,7 @@ d-grid {
   gap: 0;
 }
 
-.card__time h3 {
+.card__time h4 {
   padding: 0;
 }
 
@@ -1080,9 +1091,7 @@ d-grid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
