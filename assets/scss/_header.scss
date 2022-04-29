@@ -89,7 +89,8 @@ nav {
 
 		/* Dropdown Content (Hidden by Default) */
 		&-content {
-			display: none;
+			
+			opacity: 0;
 			position: absolute;
 			background-color: $light-color-;
 			min-width: 160px;
@@ -117,7 +118,8 @@ nav {
 		}
 
 		&:hover &-content {
-			display: block;
+		
+			opacity: 1;
 			transition: all 0.3s ease-in;
 		}
 	}
